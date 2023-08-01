@@ -22,4 +22,40 @@ $games = [
         'sales_numbers' => '30,000,000',
         'github_username' => 'DoonOnthon',
     ],
+    [
+        'title' => 'Red Dead Redemption 2',
+        'category' => 'Action-Adventure',
+        'release_date' => '2018-10-26',
+        'sales_numbers' => '38,000,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'The Legend of Zelda: Breath of the Wild',
+        'category' => 'Action-Adventure',
+        'release_date' => '2017-03-03',
+        'sales_numbers' => '22,000,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Minecraft',
+        'category' => 'Sandbox',
+        'release_date' => '2011-11-18',
+        'sales_numbers' => '238,000,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Fortnite',
+        'category' => 'Battle Royale',
+        'release_date' => '2017-07-25',
+        'sales_numbers' => '350,000,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Among Us',
+        'category' => 'Social Deduction',
+        'release_date' => '2018-06-15',
+        'sales_numbers' => '500,000,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    // Add more games here
 ];
