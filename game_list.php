@@ -1,8 +1,8 @@
 <?php
 // Include the 'games_data.php' file to get the game data
-include 'games_data.php';
+include 'includes/games_data.php';
 // Include the 'games_data.php' file to get the game data
- include 'games.php';
+ include 'includes/games.php';
 ?>
 <!DOCTYPE html>
 <?php
