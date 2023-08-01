@@ -13,6 +13,9 @@ Welcome to GamePulse! We greatly appreciate any contribution from the community,
 
 ## How to Contribute
 
+https://github.com/firstcontributions/first-contributions
+https://www.youtube.com/watch?v=Xg6C_ij99TI
+
 1. Fork the repository to your GitHub account.
 2. Create a new branch with a descriptive name related to your contribution.
 3. Make your changes and improvements.
