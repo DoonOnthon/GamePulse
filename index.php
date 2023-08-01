@@ -1,14 +1,31 @@
 <!DOCTYPE html>
+<?php
+// Check if the search form was submitted
+if (isset($_GET['search'])) {
+    $searchQuery = $_GET['search'];
+}
+?>
 <html>
+
 <head>
     <title>GamePulse - Discover Exciting Games</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container mt-5">
         <h1>Welcome to GamePulse!</h1>
         <p>Explore the world of gaming and find your next adventure.</p>
+
+        <!-- Search bar code -->
+        <form method="GET" action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="search"
+                    placeholder="Search for games by title, category, or release date">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
 
         <table class="table table-bordered table-striped">
             <thead>
@@ -47,6 +64,21 @@
                         'github_username' => 'DoonOnthon',
                     ],
                 ];
+                // Check if the search form was submitted and the search query is not empty
+                if (isset($_GET['search']) && !empty($_GET['search'])) {
+                    $searchQuery = $_GET['search'];
+
+                    // Filter games based on the search query
+                    $filteredGames = array_filter($games, function ($game) use ($searchQuery) {
+                        // Case-insensitive search against game title, category, or release date
+                        return stripos($game['title'], $searchQuery) !== false
+                            || stripos($game['category'], $searchQuery) !== false
+                            || stripos($game['release_date'], $searchQuery) !== false;
+                    });
+
+                    // Use the filtered games for displaying search results
+                    $games = $filteredGames;
+                }
 
                 // Loop through the games array and display each game as a table row
                 foreach ($games as $game) {
@@ -61,6 +93,13 @@
                 ?>
             </tbody>
         </table>
+            <!-- "Reset Search" button -->
+    <?php if (isset($_GET['search']) && !empty($_GET['search'])): ?>
+        <a href="index.php" class="btn btn-secondary mt-3">Reset Search</a>
+    <?php endif; ?>
     </div>
+
+
 </body>
+
 </html>
