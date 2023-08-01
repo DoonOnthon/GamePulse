@@ -66,9 +66,6 @@ For more details, please refer to our [contribution guidelines](CONTRIBUTING.md)
 
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
-
-We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
-
 ## License
 
 GamePulse is released under the [MIT License](LICENSE). Feel free to use, modify, and distribute the project in accordance with the terms specified in the license.
