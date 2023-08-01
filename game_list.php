@@ -2,7 +2,7 @@
 // Include the 'games_data.php' file to get the game data
 include 'includes/games_data.php';
 // Include the 'games_data.php' file to get the game data
- include 'includes/games.php';
+include 'includes/games.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,42 +27,53 @@ include 'includes/games_data.php';
             </div>
         </form>
 
-<!-- Game List Table -->
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Game Title</th>
-            <th>Category</th>
-            <th>Release Date</th>
-            <th>Sales Numbers (Approx)</th>
-            <th>Contributor</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        // Loop through the games array and display each game as a table row
-        foreach ($games as $game) {
-            echo "<tr>";
-            echo "<td>{$game['title']}</td>";
-            echo "<td>{$game['category']}</td>";
-            echo "<td>{$game['release_date']}</td>";
-            echo "<td>{$game['sales_numbers']}</td>";
-            echo "<td>{$game['github_username']}</td>";
-            echo "</tr>";
-        }
-        ?>
-    </tbody>
+        <!-- Game List Table -->
+        <table class="table table-bordered table-striped" id="game-table">
+            <thead>
+                <tr>
+                    <th>Game Title</th>
+                    <th>Category</th>
+                    <th>Release Date</th>
+                    <th>Sales Numbers (Approx)</th>
+                    <th>Contributor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Loop through the games array and display each game as a table row
+                foreach ($games as $game) {
+                    echo "<tr>";
+                    echo "<td>{$game['title']}</td>";
+                    echo "<td>{$game['category']}</td>";
+                    echo "<td>{$game['release_date']}</td>";
+                    echo "<td>{$game['sales_numbers']}</td>";
+                    echo "<td>{$game['github_username']}</td>";
+                    echo "</tr>";
+                }
+                ?>
             </tbody>
         </table>
 
         <!-- "Reset Search" button -->
         <?php if (isset($_GET['search']) && !empty($_GET['search'])): ?>
             <!-- Display the "Reset Search" button if a search query is present -->
-            <a href="index.php" class="btn btn-secondary mt-3">Reset Search</a>
+            <a href="game_list.php" class="btn btn-secondary mt-3">Reset Search</a>
         <?php endif; ?>
     </div>
 
-
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Filter games in the table based on search input
+        $(document).ready(function () {
+            $("input[name='search']").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#game-table tbody tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
