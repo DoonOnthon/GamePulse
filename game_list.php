@@ -9,8 +9,9 @@ include 'includes/games_data.php';
 
 <head>
     <title>GamePulse - Discover Exciting Games</title>
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -63,11 +64,6 @@ include 'includes/games_data.php';
             <a href="game_list.php" class="btn btn-secondary mt-3">Reset Search</a>
         <?php endif; ?>
     </div>
-
-    <!-- Include jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
     <script>
         // JavaScript to handle "Details" button click
         $(document).ready(function () {
