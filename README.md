@@ -2,6 +2,8 @@
 
 Welcome to GamePulse, your go-to platform for discovering, exploring, and engaging with a curated collection of games! Whether you're an avid gamer or a casual player, GamePulse offers a user-friendly experience to help you stay connected with the pulse of gaming excitement. Let the gaming adventure begin! 💻🎉
 
+star ⭐ this repository (top right) so that you can keep up to date with recent contribution activity via your github feed
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
