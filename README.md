@@ -62,6 +62,7 @@ For more details, please refer to our [contribution guidelines](CONTRIBUTING.md)
 ## Our Contributors
 
 - [DoonOnthon](https://github.com/DoonOnthon)
+  ![DoonOnthon's Avatar](https://github.com/DoonOnthon.png)
 
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
