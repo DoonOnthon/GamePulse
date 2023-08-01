@@ -60,6 +60,7 @@ To contribute, please follow these steps:
 For more details, please refer to our [contribution guidelines](CONTRIBUTING.md).
 
 ## Our Contributors
+
 <style>
   .avatar {
     width: 40px;
