@@ -8,6 +8,7 @@ Welcome to GamePulse, your go-to platform for discovering, exploring, and engagi
 - [Short-Term Goals](#short-term-goals)
 - [Long-Term Goals](#long-term-goals)
 - [Contributing](#contributing)
+- [Our Contributors](#our-contributors)
 - [License](#license)
 
 ## Introduction
@@ -57,6 +58,12 @@ To contribute, please follow these steps:
 7. Create a pull request to the `main` branch of the GamePulse repository.
 
 For more details, please refer to our [contribution guidelines](CONTRIBUTING.md).
+
+## Our Contributors
+
+- [DoonOnthon](https://github.com/DoonOnthon)
+
+We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
 ## License
 
