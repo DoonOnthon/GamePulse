@@ -57,5 +57,11 @@ $games = [
         'sales_numbers' => '500,000,000',
         'github_username' => 'DoonOnthon',
     ],
+    [    'title' => 'Red Dead Redemption 2',
+         'category' => 'Action-Adventure',
+         'release_date' => '2018-10-26',
+         'sales_numbers' => '38,000,000',
+         'github_username' => 'LilMaddy',]
+
     // Add more games here
 ];
