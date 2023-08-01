@@ -5,16 +5,6 @@ include 'includes/games_data.php';
  include 'includes/games.php';
 ?>
 <!DOCTYPE html>
-<?php
-// Check if the search form was submitted and the search query is not empty
-if (isset($_GET['search']) && !empty($_GET['search'])) {
-    $searchQuery = $_GET['search'];
-
-    // TODO: Implement search functionality
-    // Filter games based on the search query
-    // Code to be added here
-}
-?>
 <html>
 
 <head>
