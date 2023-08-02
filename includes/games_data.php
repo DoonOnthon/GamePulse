@@ -61,7 +61,15 @@ $games = [
          'category' => 'Action-Adventure',
          'release_date' => '2018-10-26',
          'sales_numbers' => '38,000,000',
-         'github_username' => 'LilMaddy',]
+         'github_username' => 'LilMaddy',
+    ]
+    [
+    'title' => 'Horizon Zero Dawn',
+    'category' => 'Action-Adventure',
+    'release_date' => '2017-02-28',
+    'sales_numbers' => '10,000,000',
+    'github_username' => 'Legen32',
+    ]
 
     // Add more games here
 ];
