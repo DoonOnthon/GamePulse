@@ -79,4 +79,6 @@ GamePulse is released under the [MIT License](LICENSE). Feel free to use, modify
 
 Join us on this exciting journey as we build a comprehensive gaming platform that fuels your passion for gaming and brings the gaming community together. Let's pulse with the heartbeat of gaming! 🎮🚀
 
+#hashtags #goodfirstissue #beginnerfriendly #gaming #indiegames #gamersunite #gamecommunity
+
 ---
