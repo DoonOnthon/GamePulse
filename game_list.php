@@ -3,6 +3,8 @@
 include 'includes/games_data.php';
 // Include the 'games_data.php' file to get the game data
 include 'includes/games.php';
+// Include the 'includes.inc.php' file to get the game data
+include 'includes/functions.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,6 +16,16 @@ include 'includes/games.php';
     <!-- Include jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- ###########  bit of style / css | Move later  ############ -->
+    <!-- Custom CSS to remove link underline -->
+    <style>
+        /* Style for the link in the table header */
+        th a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from parent element */
+        }
+    </style>
 </head>
 
 <body>
@@ -30,35 +42,36 @@ include 'includes/games.php';
             </div>
         </form>
 
-        <!-- Game List Table -->
-        <table class="table table-bordered table-striped" id="game-table">
-            <thead>
-                <tr>
-                    <th>Game Title</th>
-                    <th>Category</th>
-                    <th>Release Date</th>
-                    <th>Sales Numbers (Approx)</th>
-                    <th>Contributor</th>
-                    <th>Details</th> <!-- New column for "Details" button -->
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                // Loop through the games array and display each game as a table row
-                foreach ($games as $game) {
-                    echo "<tr>";
-                    echo "<td>{$game['title']}</td>";
-                    echo "<td>{$game['category']}</td>";
-                    echo "<td>{$game['release_date']}</td>";
-                    echo "<td>{$game['sales_numbers']}</td>";
-                    echo "<td>{$game['github_username']}</td>";
-                    // Add the "Details" button to each row
-                    echo "<td><button class='btn btn-primary btn-details'>Details</button></td>";
-                    echo "</tr>";
-                }
-                ?>
-            </tbody>
-        </table>
+<!-- Game List Table -->
+<table class="table table-bordered table-striped" id="game-table">
+    <thead>
+        <tr>
+            <th><a href="?sort=title">Game Title</a></th>
+            <th>Category</th>
+            <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
+            <th>Sales Numbers (Approx)</th>
+            <th>Contributor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        // Loop through the sorted games array and display each game as a table row
+        foreach ($games as $game) {
+            echo "<tr>";
+            ?>
+            <td><?php echo $game['title']; ?></td>
+            <?php
+            echo "<td>{$game['category']}</td>";
+            ?>
+            <td><?php echo $game['release_date']; ?></td>
+            <?php
+            echo "<td>{$game['sales_numbers']}</td>";
+            echo "<td>{$game['github_username']}</td>";
+            echo "</tr>";
+        }
+        ?>
+    </tbody>
+</table>
 
         <!-- "Reset Search" button -->
         <?php if (isset($_GET['search']) && !empty($_GET['search'])): ?>

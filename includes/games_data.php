@@ -62,7 +62,7 @@ $games = [
          'release_date' => '2018-10-26',
          'sales_numbers' => '38,000,000',
          'github_username' => 'LilMaddy',
-    ]
+],
     [
     'title' => 'Horizon Zero Dawn',
     'category' => 'Action-Adventure',
