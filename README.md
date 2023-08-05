@@ -70,8 +70,23 @@ Contribute to get on the list!
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/DoonOnthon">
           <img src="https://github.com/DoonOnthon.png" width="100px;" alt="DoonOnthon"/><br />
-          <sub><b>Doononthon</b></sub>
+          <sub><b>DoonOnthon</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Legen32">
+          <img src="https://github.com/Legen32.png" width="100px;" alt="Legen32"/><br />
+          <sub><b>Legen32</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/LilMaddy">
+          <img src="https://github.com/LilMaddy.png" width="100px;" alt="LilMaddy"/><br />
+          <sub><b>LilMaddy</b></sub>
         </a>
         <br />
       </td>
@@ -80,21 +95,8 @@ Contribute to get on the list!
     <!-- Add more <tr> elements for additional rows if needed -->
   </tbody>
 </table>
-Replace "https://your-avatar-url-here.png" with the URL of your avatar image, "Your Name" with your name, and "your-github-username" with your GitHub username. You can also add more <td> elements for other contributors and additional <tr> elements for more rows if needed.
 
 
-
-
-
-
-
-
-
-
-
-  <img src="https://github.com/DoonOnthon.png" alt="DoonOnthon's Avatar" width="30" height="30">
-  <img src="https://github.com/Legen32.png" alt="Legen32's Avatar" width="30" height="30">
-  <img src="https://github.com/LilMaddy.png" alt="LilMaddy's Avatar" width="30" height="30">
   
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
