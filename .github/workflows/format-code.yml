@@ -1,37 +1,32 @@
 name: Code Formatting
+name: Format (prettier)
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    push:
+        branches:
+            - 'master'
+    pull_request:
+        paths:
+            - '**.css'
+            - '**.js'
+            - '**.vue'
+
 jobs:
-  format-code:
-    runs-on: ubuntu-latest
+    prettier:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+            - name: Install
+              run: yarn install
+              env:
+                  CI: true
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+            - name: Run prettier
+              run: yarn run prettier --write 'src/**/*.{css,js,vue}'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Format code using prettier-action
-        uses: stefanzweifel/prettier-action@v2
-        with:
-          files: .        # Specify the files or directories you want to format
-          prettier: npm   # Use 'npm' or 'yarn' depending on your package manager
-
-      - name: Commit formatted code
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -am "Auto-format code"
-          git push
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: Apply prettier changes
