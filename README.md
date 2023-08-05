@@ -70,17 +70,10 @@ Contribute to get on the list!
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%">
-        <a href="http://www.turtlebytes.com, https://storagetreasures.com/">
-          <img src="https://your-avatar-url-here.png" width="100px;" alt="Your Name"/><br />
-          <sub><b>Your Name</b></sub>
+          <img src="[https://your-avatar-url-here.png](https://github.com/DoonOnthon.png)" width="100px;" alt="DoonOnthon"/><br />
+          <sub><b>Doononthon</b></sub>
         </a>
         <br />
-        <a href="https://github.com/your-github-username" title="Code">💻</a>
-        <a href="https://github.com/your-github-username" title="Tests">⚠️</a>
-        <a href="https://github.com/your-github-username" title="Reviewed Pull Requests">👀</a>
-        <a href="#ideas-your-github-username" title="Ideas, Planning, & Feedback">🤔</a>
-        <a href="#design-your-github-username" title="Design">🎨</a>
-        <a href="#question-your-github-username" title="Answering Questions">💬</a>
       </td>
       <!-- Add more <td> elements for other contributors if needed -->
     </tr>
