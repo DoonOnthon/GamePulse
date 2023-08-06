@@ -49,7 +49,7 @@ include 'includes/functions.inc.php';
             <th><a href="?sort=title">Game Title</a></th>
             <th>Category</th>
             <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-            <th>Sales Numbers (Approx)</th>
+            <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
             <th>Contributor</th>
         </tr>
     </thead>
