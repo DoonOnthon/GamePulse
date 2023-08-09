@@ -5,6 +5,8 @@ include 'includes/games_data.php';
 include 'includes/games.php';
 // Include the 'includes.inc.php' file to get the game data
 include 'includes/functions.inc.php';
+// include the 'pagination.php' file to sort the game data
+include 'path_to_your_file/pagination.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,8 +24,10 @@ include 'includes/functions.inc.php';
     <style>
         /* Style for the link in the table header */
         th a {
-            text-decoration: none; /* Remove underline */
-            color: inherit; /* Inherit color from parent element */
+            text-decoration: none;
+            /* Remove underline */
+            color: inherit;
+            /* Inherit color from parent element */
         }
     </style>
 </head>
@@ -42,36 +46,51 @@ include 'includes/functions.inc.php';
             </div>
         </form>
 
-<!-- Game List Table -->
-<table class="table table-bordered table-striped" id="game-table">
-    <thead>
-        <tr>
-            <th><a href="?sort=title">Game Title</a></th>
-            <th>Category</th>
-            <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-            <th>Sales Numbers (Approx)</th>
-            <th>Contributor</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        // Loop through the sorted games array and display each game as a table row
-        foreach ($games as $game) {
-            echo "<tr>";
-            ?>
-            <td><?php echo $game['title']; ?></td>
-            <?php
-            echo "<td>{$game['category']}</td>";
-            ?>
-            <td><?php echo $game['release_date']; ?></td>
-            <?php
-            echo "<td>{$game['sales_numbers']}</td>";
-            echo "<td>{$game['github_username']}</td>";
-            echo "</tr>";
-        }
-        ?>
-    </tbody>
-</table>
+        <!-- Game List Table -->
+        <table class="table table-bordered table-striped" id="game-table">
+            <thead>
+                <tr>
+                    <th><a href="?sort=title">Game Title</a></th>
+                    <th>Category</th>
+                    <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
+                    <th>Sales Numbers (Approx)</th>
+                    <th>Contributor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Loop through the sorted games array and display each game as a table row
+                foreach ($gamesPage as $game) {
+                    echo "<tr>";
+                    ?>
+                    <td>
+                        <?php echo $game['title']; ?>
+                    </td>
+                    <?php
+                    echo "<td>{$game['category']}</td>";
+                    ?>
+                    <td>
+                        <?php echo $game['release_date']; ?>
+                    </td>
+                    <?php
+                    echo "<td>{$game['sales_numbers']}</td>";
+                    echo "<td>{$game['github_username']}</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                    <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
+                        <a class="page-link"
+                            href="?page=<?php echo $i; ?><?php echo isset($_GET['sort']) ? '&sort=' . $_GET['sort'] : ''; ?>"><?php echo $i; ?></a>
+                    </li>
+                <?php endfor; ?>
+            </ul>
+        </nav>
 
         <!-- "Reset Search" button -->
         <?php if (isset($_GET['search']) && !empty($_GET['search'])): ?>

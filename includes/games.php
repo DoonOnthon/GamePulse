@@ -5,6 +5,12 @@ include 'games_data.php';
 if (isset($_GET['search']) && !empty($_GET['search'])) {
     $searchQuery = $_GET['search'];
 
+    // Limit the length of the search query
+    if (strlen($searchQuery) > 100) {
+        die("Search query is too long.");
+    }
+
+
     // Filter games based on the search query
     $filteredGames = array_filter($games, function ($game) use ($searchQuery) {
         // Case-insensitive search against game title, category, or release date
@@ -15,4 +21,11 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
 
     // Use the filtered games for displaying search results
     $games = $filteredGames;
+
+    // Check and validate the sorting method
+    $allowedSortMethods = ['title', 'newest', 'oldest'];
+    $sort = isset($_GET['sort']) && in_array($_GET['sort'], $allowedSortMethods) ? $_GET['sort'] : '';
+    if (!$sort && isset($_GET['sort'])) {
+        die("Invalid sorting method.");
+    }
 }
