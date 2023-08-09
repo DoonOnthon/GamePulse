@@ -23,8 +23,10 @@ function sortGamesBySalesNumbers($a, $b) {
     return $b['sales_numbers'] - $a['sales_numbers']; 
 }
 
+
 // Determine the current sorting method
 $sort = isset($_GET['sort']) ? $_GET['sort'] : '';
+$sortDirection = isset($_GET['direction']) ? $_GET['direction'] : 'desc';
 
 // Sort the games based on the selected sorting method
 if ($sort === 'title') {
@@ -37,6 +39,13 @@ if ($sort === 'title') {
     // Sort games by release date using the selected order
     usort($games, 'sortGamesByDate');
 } elseif ($sort === 'sales') {
-    // Sort games by sales numbers
-    usort($games, 'sortGamesBySalesNumbers');
+    if ($sortDirection === 'asc') {
+        usort($games, function($a, $b) {
+            return $a['sales_numbers'] - $b['sales_numbers'];
+        });
+    } else {
+        usort($games, function($a, $b) {
+            return $b['sales_numbers'] - $a['sales_numbers'];
+        });
+    }
 }

@@ -50,7 +50,7 @@ include 'includes/pagination.php';       // Include pagination logic
                     <th><a href="?sort=title">Game Title</a></th>
                     <th>Category</th>
                     <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-                    <th><a href="?sort=sales">Sales Numbers</a></th>
+                    <th><a href="?sort=sales&amp;direction=<?php echo ($sort === 'sales' && $sortDirection === 'asc') ? 'desc' : 'asc'; ?>">Sales Numbers</a></th>
 
                     <th>Contributor</th>
                 </tr>
