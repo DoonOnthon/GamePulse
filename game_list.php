@@ -7,7 +7,6 @@ include 'includes/pagination.php';       // Include pagination logic
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>GamePulse - Discover Exciting Games</title>
     <!-- Include Bootstrap CSS -->
@@ -45,46 +44,31 @@ include 'includes/pagination.php';       // Include pagination logic
         <!-- Game List Table -->
         <table class="table table-bordered table-striped" id="game-table">
             <thead>
-                <!-- Table Headers -->
-                <tr>
-                    <th><a href="?sort=title">Game Title</a></th>
-                    <th>Category</th>
-                    <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-                    <th>Sales Numbers (Approx)</th>
-                    <th>Contributor</th>
-                </tr>
+            <tr>
+                <th><a href="?sort=title">Game Title</a></th>
+                <th>Category</th>
+                <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
+                <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
+                <th>Contributor</th>
+            </tr>
             </thead>
             <tbody>
-                <?php
-                // Loop through the sorted games array and display each game as a table row
-                foreach ($gamesPage as $game) {
-                    echo "<tr>";
+            <?php
+            // Loop through the sorted games array and display each game as a table row
+            foreach ($games as $game) {
+                echo "<tr>";
                 ?>
-                    <!-- Game Title -->
-                    <td>
-                        <?php echo $game['title']; ?>
-                    </td>
-                    <?php
-                    // Category
-                    echo "<td>{$game['category']}</td>";
-                    ?>
-                    <!-- Release Date -->
-                    <td>
-                        <?php echo $game['release_date']; ?>
-                    </td>
-                    <?php
-                    // Sales Numbers and Contributor
-                    echo "<td>{$game['sales_numbers']}</td>";
-                    echo "<td>{$game['github_username']}</td>";
-                    ?>
-                    <!-- Details Button -->
-                    <td>
-                        <button class="btn btn-primary btn-details">Details</button>
-                    </td>
+                <td><?php echo $game['title']; ?></td>
                 <?php
-                    echo "</tr>";
-                }
+                echo "<td>{$game['category']}</td>";
                 ?>
+                <td><?php echo $game['release_date']; ?></td>
+                <?php
+                echo "<td>{$game['sales_numbers']}</td>";
+                echo "<td>{$game['github_username']}</td>";
+                echo "</tr>";
+            }
+            ?>
             </tbody>
         </table>
 
@@ -98,6 +82,8 @@ include 'includes/pagination.php';       // Include pagination logic
                 <?php endfor; ?>
             </ul>
         </nav>
+<!-- Game List Table -->
+
 
         <!-- "Reset Search" button -->
         <?php if (isset($_GET['search']) && !empty($_GET['search'])) : ?>
