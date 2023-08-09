@@ -40,8 +40,7 @@ include 'includes/pagination.php';
         <!-- Search bar code -->
         <form method="GET" action="">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" name="search"
-                    placeholder="Search for games by title, category, or release date">
+                <input type="text" class="form-control" name="search" placeholder="Search for games by title, category, or release date">
                 <button class="btn btn-primary" type="submit">Search</button>
             </div>
         </form>
@@ -62,7 +61,7 @@ include 'includes/pagination.php';
                 // Loop through the sorted games array and display each game as a table row
                 foreach ($gamesPage as $game) {
                     echo "<tr>";
-                    ?>
+                ?>
                     <td>
                         <?php echo $game['title']; ?>
                     </td>
@@ -75,6 +74,11 @@ include 'includes/pagination.php';
                     <?php
                     echo "<td>{$game['sales_numbers']}</td>";
                     echo "<td>{$game['github_username']}</td>";
+                    ?>
+                    <td>
+                        <button class="btn btn-primary btn-details">Details</button>
+                    </td>
+                <?php
                     echo "</tr>";
                 }
                 ?>
@@ -83,25 +87,24 @@ include 'includes/pagination.php';
 
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                <?php for ($i = 1; $i <= $totalPages; $i++) : ?>
                     <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
-                        <a class="page-link"
-                            href="?page=<?php echo $i; ?><?php echo isset($_GET['sort']) ? '&sort=' . $_GET['sort'] : ''; ?>"><?php echo $i; ?></a>
+                        <a class="page-link" href="?page=<?php echo $i; ?><?php echo isset($_GET['sort']) ? '&sort=' . $_GET['sort'] : ''; ?>"><?php echo $i; ?></a>
                     </li>
                 <?php endfor; ?>
             </ul>
         </nav>
 
         <!-- "Reset Search" button -->
-        <?php if (isset($_GET['search']) && !empty($_GET['search'])): ?>
+        <?php if (isset($_GET['search']) && !empty($_GET['search'])) : ?>
             <!-- Display the "Reset Search" button if a search query is present -->
             <a href="game_list.php" class="btn btn-secondary mt-3">Reset Search</a>
         <?php endif; ?>
     </div>
     <script>
         // JavaScript to handle "Details" button click
-        $(document).ready(function () {
-            $(".btn-details").on("click", function () {
+        $(document).ready(function() {
+            $(".btn-details").on("click", function() {
                 // Get the row index of the clicked button
                 var rowIndex = $(this).closest("tr").index();
                 // Get the game details from the games array based on the row index
@@ -123,8 +126,7 @@ include 'includes/pagination.php';
     </script>
 
     <!-- Modal for displaying game details -->
-    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
