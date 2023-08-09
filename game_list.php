@@ -6,7 +6,7 @@ include 'includes/games.php';
 // Include the 'includes.inc.php' file to get the game data
 include 'includes/functions.inc.php';
 // include the 'pagination.php' file to sort the game data
-include 'path_to_your_file/pagination.php';
+include 'includes/pagination.php';
 ?>
 <!DOCTYPE html>
 <html>
