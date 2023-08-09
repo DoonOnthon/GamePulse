@@ -78,7 +78,7 @@ Contribute to get on the list!
       </td>
       <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/doromi22">
-          <img src="https://github.com/doromi22" width="100px;" alt="DoonOnthon"/><br />
+          <img src="https://github.com/doromi22.png" width="100px;" alt="doromi22"/><br />
           <sub><b>doromi22</b></sub>
         </a>
         <br />
