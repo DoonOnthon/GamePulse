@@ -18,6 +18,11 @@ function sortGamesByDate($a, $b) {
     }
 }
 
+// Sort in descending order (highest to lowest)
+function sortGamesBySalesNumbers($a, $b) {
+    return $b['sales_numbers'] - $a['sales_numbers']; 
+}
+
 // Determine the current sorting method
 $sort = isset($_GET['sort']) ? $_GET['sort'] : '';
 
@@ -31,4 +36,7 @@ if ($sort === 'title') {
     
     // Sort games by release date using the selected order
     usort($games, 'sortGamesByDate');
+} elseif ($sort === 'sales') {
+    // Sort games by sales numbers
+    usort($games, 'sortGamesBySalesNumbers');
 }
