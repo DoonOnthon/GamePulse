@@ -77,6 +77,13 @@ Contribute to get on the list!
         <br />
       </td>
       <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/doromi22">
+          <img src="https://github.com/doromi22.png" width="100px;" alt="doromi22"/><br />
+          <sub><b>doromi22</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/Legen32">
           <img src="https://github.com/Legen32.png" width="100px;" alt="Legen32"/><br />
           <sub><b>Legen32</b></sub>
