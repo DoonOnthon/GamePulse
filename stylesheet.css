@@ -1,0 +1,12 @@
+.hero-banner {
+    background-image: url('images/herobanner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
