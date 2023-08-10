@@ -55,14 +55,36 @@ $games = [
          'release_date' => '2018-10-26',
          'sales_numbers' => '38,000,000',
          'github_username' => 'LilMaddy',
-],
+    ],
     [
     'title' => 'Horizon Zero Dawn',
     'category' => 'Action-Adventure',
     'release_date' => '2017-02-28',
     'sales_numbers' => '10,000,000',
     'github_username' => 'Legen32',
+    ],
+
+    [
+        'title'=> 'Grand Theft Auto V',
+        'category'=> 'Action-Adventure',
+        'release_date'=> 'September 17, 2013',
+        'sales_numbers'=> '140,000,000',
+        'github_username'=> 'tetawiah',
+      ],
+
+      [
+        'title'=> 'Tetris',
+        'category'=> 'Puzzle',
+        'release_date'=> 'June 6, 1984',
+        'sales_numbers'=> '170,000,000',
+        'github_username'=> 'tetawiah',
+      ],
+      [
+        'title'=> 'Call of Duty=> Modern Warfare 2',
+        'category'=> 'First-person shooter',
+        'release_date'=> 'November 10, 2009',
+        'sales_numbers'=> '22,700,000',
+        'github_username'=> 'tetawiah',
     ]
 
-    // Add more games here
 ];
