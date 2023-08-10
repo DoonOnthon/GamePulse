@@ -83,6 +83,13 @@ Contribute to get on the list!
         </a>
         <br />
       </td>
+            <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/tetawiah">
+          <img src="https://github.com/tetawiah.png" width="100px;" alt="doromi22"/><br />
+          <sub><b>tetawiah</b></sub>
+        </a>
+        <br />
+      </td>
       <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/Legen32">
           <img src="https://github.com/Legen32.png" width="100px;" alt="Legen32"/><br />
