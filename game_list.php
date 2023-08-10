@@ -131,6 +131,9 @@ include 'includes/pagination.php';       // Include pagination logic
             </div>
         </div>
     </div>
+    <?php
+    include 'includes/footer.inc.php';       // Include footer
+?>
 </body>
 
 </html>
