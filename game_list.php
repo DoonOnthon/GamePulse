@@ -53,23 +53,19 @@ include 'includes/pagination.php';       // Include pagination logic
             </tr>
             </thead>
             <tbody>
-            <?php
-            // Loop through the sorted games array and display each game as a table row
-            foreach ($games as $game) {
-                echo "<tr>";
-                ?>
+        <?php foreach ($gamesPage as $game) : ?>
+            <tr>
                 <td><?php echo $game['title']; ?></td>
-                <?php
-                echo "<td>{$game['category']}</td>";
-                ?>
+                <td><?php echo $game['category']; ?></td>
                 <td><?php echo $game['release_date']; ?></td>
-                <?php
-                echo "<td>{$game['sales_numbers']}</td>";
-                echo "<td>{$game['github_username']}</td>";
-                echo "</tr>";
-            }
-            ?>
-            </tbody>
+                <td><?php echo $game['sales_numbers']; ?></td>
+                <td><?php echo $game['github_username']; ?></td>
+                <td>
+                <button class="btn btn-primary btn-details">Details</button>
+            </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
         </table>
 
         <!-- Pagination -->

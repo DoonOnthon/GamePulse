@@ -1,6 +1,6 @@
 <?php
 // Pagination logic
-$itemsPerPage = 10;
+$itemsPerPage = 5;
 $totalItems = count($games);
 $totalPages = ceil($totalItems / $itemsPerPage);
 
@@ -9,6 +9,9 @@ if ($currentPage < 1 || $currentPage > $totalPages) {
     $currentPage = 1;
 }
 
-$startIndex = ($currentPage - 1) * $itemsPerPage;
+$startIndex = max(($currentPage - 1) * $itemsPerPage, 0);
 $gamesPage = array_slice($games, $startIndex, $itemsPerPage);
+
+// Debugging statements
+var_dump($totalItems, $itemsPerPage, $currentPage, $startIndex);
 ?>

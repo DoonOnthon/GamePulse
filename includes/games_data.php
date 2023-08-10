@@ -63,28 +63,25 @@ $games = [
     'sales_numbers' => '10,000,000',
     'github_username' => 'Legen32',
     ],
-
     [
-        'title'=> 'Grand Theft Auto V',
-        'category'=> 'Action-Adventure',
-        'release_date'=> 'September 17, 2013',
-        'sales_numbers'=> '140,000,000',
-        'github_username'=> 'tetawiah',
-      ],
-
-      [
-        'title'=> 'Tetris',
-        'category'=> 'Puzzle',
-        'release_date'=> 'June 6, 1984',
-        'sales_numbers'=> '170,000,000',
-        'github_username'=> 'tetawiah',
-      ],
-      [
-        'title'=> 'Call of Duty=> Modern Warfare 2',
-        'category'=> 'First-person shooter',
-        'release_date'=> 'November 10, 2009',
-        'sales_numbers'=> '22,700,000',
-        'github_username'=> 'tetawiah',
+        'title' => 'Grand Theft Auto V',
+        'category' => 'Action-Adventure',
+        'release_date' => '2013-09-17',
+        'sales_numbers' => '140,000,000',
+        'github_username' => 'tetawiah',
+    ],
+    [
+        'title' => 'Tetris',
+        'category' => 'Puzzle',
+        'release_date' => '1984-06-06',
+        'sales_numbers' => '170,000,000',
+        'github_username' => 'tetawiah',
+    ],
+    [
+        'title' => 'Call of Duty: Modern Warfare 2',
+        'category' => 'First-person shooter',
+        'release_date' => '2009-11-10',
+        'sales_numbers' => '22,700,000',
+        'github_username' => 'tetawiah',
     ]
-
 ];
