@@ -64,11 +64,11 @@ $games = [
          'github_username' => 'LilMaddy',
     ],
     [
-    'title' => 'Horizon Zero Dawn',
-    'category' => 'Action-Adventure',
-    'release_date' => '2017-02-28',
-    'sales_numbers' => '10,000,000',
-    'github_username' => 'Legen32',
+        'title' => 'Horizon Zero Dawn',
+        'category' => 'Action-Adventure',
+        'release_date' => '2017-02-28',
+        'sales_numbers' => '10,000,000',
+        'github_username' => 'Legen32',
     ],
     [
         'title' => 'Grand Theft Auto V',
