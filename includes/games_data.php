@@ -92,10 +92,10 @@ $games = [
         'github_username' => 'tetawiah',
     ],
     [
-        'title' => 'Elden Ring'
-        'category' => 'ARPG'
-        'release_date' => '2022-02-25'
-        'sales_numbers' => '20,500,000'
-        'github_username' => 'h-rx7'
+        'title' => 'Elden Ring',
+        'category' => 'ARPG',
+        'release_date' => '2022-02-25',
+        'sales_numbers' => '20,500,000',
+        'github_username' => 'h-rx7',
     ]
 ];
