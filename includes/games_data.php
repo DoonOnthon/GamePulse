@@ -57,11 +57,11 @@ $games = [
          'github_username' => 'LilMaddy',
     ],
     [
-    'title' => 'Horizon Zero Dawn',
-    'category' => 'Action-Adventure',
-    'release_date' => '2017-02-28',
-    'sales_numbers' => '10,000,000',
-    'github_username' => 'Legen32',
+        'title' => 'Horizon Zero Dawn',
+        'category' => 'Action-Adventure',
+        'release_date' => '2017-02-28',
+        'sales_numbers' => '10,000,000',
+        'github_username' => 'Legen32',
     ],
     [
         'title' => 'Grand Theft Auto V',
@@ -83,5 +83,19 @@ $games = [
         'release_date' => '2009-11-10',
         'sales_numbers' => '22,700,000',
         'github_username' => 'tetawiah',
+    ],
+    [
+        'title' => 'Elden Ring',
+        'category' => 'ARPG',
+        'release_date' => '2022-02-25',
+        'sales_numbers' => '20,500,000',
+        'github_username' => 'harrydemorgan',
+    ],
+    [
+        'title' => 'Counter-Strike: Global Offensive',
+        'category' => 'First-person shooter',
+        'release_date' => '2012-08-21',
+        'sales_numbers' => '45,000,000+',
+        'github_username' => 'DoonOnthon',
     ]
 ];

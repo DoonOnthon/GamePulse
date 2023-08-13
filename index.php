@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Welcome to GamePulse</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- include styleheet -->
+    <!-- Include your custom stylesheet -->
     <link href="stylesheet.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
@@ -17,16 +19,45 @@
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Introduction -->
     <section class="container mt-5">
-        <!-- Other content goes here -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2>About GamePulse</h2>
+                <p class="lead">GamePulse is your gateway to discovering an exhilarating realm of video games. With a handpicked selection spanning diverse genres, GamePulse empowers gamers to explore, experience, and engage with captivating titles.</p>
+                <p>Whether you're on the lookout for high-octane action, mind-bending puzzles, or immersive narratives, our platform curates an exceptional collection that resonates with gaming enthusiasts of all levels.</p>
+                <p>Join us on this journey as we celebrate the art, innovation, and endless enjoyment that the world of gaming offers. Fuel your passion, ignite your curiosity, and uncover your next unforgettable gaming experience with GamePulse.</p>
+            </div>
+        </div>
     </section>
+<!-- Popular Games Right Now -->
+<section class="popular-games">
+    <div class="container">
+        <h2 class="section-title">Popular Games Right Now</h2>
+        <div class="horizontal-tilted-game-art">
+            <div class="tilted-game-art">
+                <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2Freddeadredemption2%2F&options=&locale=en_us">
+                    <img src="images/RDR2cover.jpg" alt="RDR2 Game Art">
+                </a>
+            </div>
+            <div class="tilted-game-art">
+                <a target="_blank" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">
+                    <img src="images/CSGOcover.jpg" alt="CSGO Game Art">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Include Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <?php
-    include 'includes/footer.inc.php';   // Include footer
-    ?>
+
+    <!-- Include the footer -->
+    <?php include 'includes/footer.inc.php'; ?>
 </body>
+
 </html>
