@@ -9,6 +9,13 @@ $games = [
         'github_username' => 'DoonOnthon',
     ],
     [
+        'title' => 'Dark and Darker',
+        'category' => 'Stealth Action',
+        'release_date' => '2023-04-15',
+        'sales_numbers' => '1,500,000',
+        'github_username' => 'Doononthon',
+    ],
+    [
         'title' => 'Assassin\'s Creed Valhalla',
         'category' => 'Adventure',
         'release_date' => '2020-11-10',
@@ -57,6 +64,11 @@ $games = [
          'github_username' => 'LilMaddy',
     ],
     [
+        'title' => 'Horizon Zero Dawn',
+        'category' => 'Action-Adventure',
+        'release_date' => '2017-02-28',
+        'sales_numbers' => '10,000,000',
+        'github_username' => 'Legen32',
         'title' => 'Horizon Zero Dawn',
         'category' => 'Action-Adventure',
         'release_date' => '2017-02-28',

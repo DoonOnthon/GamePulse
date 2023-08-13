@@ -75,6 +75,12 @@ Contribute to get on the list!
           <sub><b>DoonOnthon</b></sub>
         </a>
         <br />
+        <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/harrydemorgan">
+          <img src="https://github.com/harrydemorgan.png" width="100px;" alt="harrydemorgan"/><br />
+          <sub><b>harrydemorgan</b></sub>
+        </a>
+        <br />
       </td>
       <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/doromi22">
