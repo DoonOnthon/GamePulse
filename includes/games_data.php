@@ -9,11 +9,11 @@ $games = [
         'github_username' => 'DoonOnthon',
     ],
     [
-    'title' => 'Dark and Darker',
-    'category' => 'Stealth Action',
-    'release_date' => '2023-04-15',
-    'sales_numbers' => '1,500,000',
-    'github_username' => 'Doononthon',
+        'title' => 'Dark and Darker',
+        'category' => 'Stealth Action',
+        'release_date' => '2023-04-15',
+        'sales_numbers' => '1,500,000',
+        'github_username' => 'Doononthon',
     ],
     [
         'title' => 'Assassin\'s Creed Valhalla',
