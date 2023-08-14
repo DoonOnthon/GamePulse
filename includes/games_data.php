@@ -104,5 +104,13 @@ $games = [
         'release_date' => '2012-08-21',
         'sales_numbers' => '45,000,000+',
         'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Beat Saber',
+        'category' => 'Rhythm',
+        'release_date' => '2018-05-01',
+        'sales_numbers' => '6,000,000+',
+        'github_username' => 'DoonOnthon',
     ]
+
 ];
