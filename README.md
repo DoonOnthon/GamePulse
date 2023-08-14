@@ -47,7 +47,7 @@ Our long-term goals for GamePulse include:
 - Enhancing the community features, such as forums and social sharing, to foster a vibrant and active user community.
 - Introducing multilingual support to make GamePulse accessible to users from various regions.
 
-## Contributing
+## Contributing 
 
 We really appreciate any contribution from the gaming community, and we warmly welcome everyone, including beginners. Whether you're an experienced developer or just starting your coding journey, there are various ways you can contribute to our project. If you can't code, don't worry; you can still make valuable contributions, such as fixing typos, adding comments to code, or suggesting new features. Your involvement helps make GamePulse a thriving hub for gaming enthusiasts.
 
