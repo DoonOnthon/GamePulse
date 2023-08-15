@@ -111,6 +111,12 @@ $games = [
         'release_date' => '2018-05-01',
         'sales_numbers' => '6,000,000+',
         'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Resident Evil 8: Village',
+        'category' => 'Action-Adventure',
+        'release_date' => '2021-05-07',
+        'sales_numbers' => '8,000,000+',
+        'github_username' => 'Omanshu209',
     ]
-
 ];
