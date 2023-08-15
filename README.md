@@ -96,7 +96,7 @@ Contribute to get on the list!
         </a>
         <br />
       </td>
-            <td align="center" valign="top" width="14.28%">
+      <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/Omanshu209">
           <img src="https://github.com/Omanshu209.png" width="100px;" alt="Omanshu209"/><br />
           <sub><b>Omanshu209</b></sub>
