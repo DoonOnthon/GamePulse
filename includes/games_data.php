@@ -118,5 +118,12 @@ $games = [
         'release_date' => '2021-05-07',
         'sales_numbers' => '8,000,000+',
         'github_username' => 'Omanshu209',
+    ],
+    [
+        'title' => 'Mount & Blade II: Bannerlord',
+        'category' => 'RPG',
+        'release_date' => '2022-10-25',
+        'sales_numbers' => '3,100,000+',
+        'github_username' => 'AlandisAyupov',
     ]
 ];
