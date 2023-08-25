@@ -72,7 +72,7 @@ $games = [
     ],
     [
         'title' => 'Grand Theft Auto V',
-        'category' => 'Action-Adventure',
+        'category' => ' q',
         'release_date' => '2013-09-17',
         'sales_numbers' => '140,000,000',
         'github_username' => 'tetawiah',
@@ -125,5 +125,12 @@ $games = [
         'release_date' => '2022-10-25',
         'sales_numbers' => '3,100,000+',
         'github_username' => 'AlandisAyupov',
+    ],
+    [
+        'title' => 'Cyberpunk 2077',
+        'category' => 'Action-Adventure',
+        'release_date' => '2020-12-10',
+        'sales_numbers' => '20,000,000+',
+        'github_username' => 'Camarota-234',
     ]
 ];
