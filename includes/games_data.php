@@ -132,5 +132,12 @@ $games = [
         'release_date' => '2020-12-10',
         'sales_numbers' => '20,000,000+',
         'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'God of War Ragnarök',
+        'category' => 'Action-Adventure',
+        'release_date' => '2022-11-09',
+        'sales_numbers' => '11,000,000+',
+        'github_username' => 'Camarota-234',
     ]
 ];
