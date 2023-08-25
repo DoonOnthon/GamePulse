@@ -139,5 +139,12 @@ $games = [
         'release_date' => '2022-11-09',
         'sales_numbers' => '11,000,000+',
         'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'The Last of Us 2',
+        'category' => 'Action-Adventure',
+        'release_date' => '2020-19-06',
+        'sales_numbers' => '10,000,000+',
+        'github_username' => 'Camarota-234',
     ]
 ];
