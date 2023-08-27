@@ -146,5 +146,26 @@ $games = [
         'release_date' => '2020-19-06',
         'sales_numbers' => '10,000,000+',
         'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Phasmophobia',
+        'category' => 'Adventure',
+        'release_date' => '2020-9-18',
+        'sales_numbers' => '5,000,000+',
+        'github_username' => 'Omanshu209',
+    ],
+    [
+        'title' => 'Infliction',
+        'category' => 'Adventure',
+        'release_date' => '2018-10-17',
+        'sales_numbers' => '4,000,000+',
+        'github_username' => 'Omanshu209',
+    ],
+    [
+        'title' => 'MADiSON',
+        'category' => 'Adventure',
+        'release_date' => '2022-07-08',
+        'sales_numbers' => '3,000,000+',
+        'github_username' => 'Omanshu209',
     ]
 ];
