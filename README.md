@@ -1,4 +1,5 @@
 # GamePulse 🎮🚀
+
 ![duck-pixel](https://github.com/DoonOnthon/GamePulse/assets/73943064/705ba326-116c-4d1b-87f6-88014dcb7eaf)
 
 # Welcome
@@ -47,7 +48,7 @@ Our long-term goals for GamePulse include:
 - Enhancing the community features, such as forums and social sharing, to foster a vibrant and active user community.
 - Introducing multilingual support to make GamePulse accessible to users from various regions.
 
-## Contributing
+## Contributing 
 
 We really appreciate any contribution from the gaming community, and we warmly welcome everyone, including beginners. Whether you're an experienced developer or just starting your coding journey, there are various ways you can contribute to our project. If you can't code, don't worry; you can still make valuable contributions, such as fixing typos, adding comments to code, or suggesting new features. Your involvement helps make GamePulse a thriving hub for gaming enthusiasts.
 
@@ -91,8 +92,22 @@ Contribute to get on the list!
       </td>
             <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/tetawiah">
-          <img src="https://github.com/tetawiah.png" width="100px;" alt="doromi22"/><br />
+          <img src="https://github.com/tetawiah.png" width="100px;" alt="tetawiah"/><br />
           <sub><b>tetawiah</b></sub>
+        </a>
+        <br />
+      </td>
+       <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlandisAyupov">
+          <img src="https://github.com/AlandisAyupov.png" width="100px;" alt="AlandisAyupov"/><br />
+          <sub><b>AlandisAyupov</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Omanshu209">
+          <img src="https://github.com/Omanshu209.png" width="100px;" alt="Omanshu209"/><br />
+          <sub><b>Omanshu209</b></sub>
         </a>
         <br />
       </td>
