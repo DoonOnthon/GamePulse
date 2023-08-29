@@ -1,7 +1,5 @@
 # GamePulse 🎮🚀
 
-I've joined a gamejam so wont be as active with updating code myself, pull requests and issue reports will still be taken care of so keep them coming! (this is the last day of the gamejam, will start updating code etc again from tomorrow on)
-
 ![duck-pixel](https://github.com/DoonOnthon/GamePulse/assets/73943064/705ba326-116c-4d1b-87f6-88014dcb7eaf)
 
 # Welcome
