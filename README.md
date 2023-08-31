@@ -1,7 +1,5 @@
 # GamePulse 🎮🚀
 
-Gamejam is over!
-
 ![duck-pixel](https://github.com/DoonOnthon/GamePulse/assets/73943064/705ba326-116c-4d1b-87f6-88014dcb7eaf)
 
 # Welcome
