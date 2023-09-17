@@ -167,5 +167,19 @@ $games = [
         'release_date' => '2022-07-08',
         'sales_numbers' => '3,000,000+',
         'github_username' => 'Omanshu209',
-    ]
+    ],
+    [
+        'title' => 'Mount & Blade: Warband',
+        'category' => 'Action RPG',
+        'release_date' => '2010-03-30',
+        'sales_numbers' => '6,000,000+',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Pummel Party',
+        'category' => 'Party Game',
+        'release_date' => '2018-09-20',
+        'sales_numbers' => 'Over 1,000,000 on Steam',
+        'github_username' => 'DoonOnthon',
+    ]       
 ];
