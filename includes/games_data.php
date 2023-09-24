@@ -16,6 +16,20 @@ $games = [
         'github_username' => 'Doononthon',
     ],
     [
+    'title' => 'The Elder Scrolls V: Skyrim',
+    'category' => 'RPG',
+    'release_date' => '2011-11-11',
+    'sales_numbers' => '30,000,000+',
+    'github_username' => 'DoonOnthon',
+],
+[
+    'title' => 'Overwatch',
+    'category' => 'First-person shooter',
+    'release_date' => '2016-05-24',
+    'sales_numbers' => '50,000,000+',
+    'github_username' => 'DoonOnthon',
+],
+    [
         'title' => 'Assassin\'s Creed Valhalla',
         'category' => 'Adventure',
         'release_date' => '2020-11-10',
