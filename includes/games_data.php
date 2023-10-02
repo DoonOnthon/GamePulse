@@ -274,4 +274,11 @@ $games = [
         'sales_numbers' => '5,000,000+',
         'github_username' => 'lucas-dantas10',
     ],
+    [
+        'title' => 'New World',
+        'category' => 'MMORPG, Action-Adventure',
+        'release_date' => '2021-09-28',
+        'sales_numbers' => '700,000+',
+        'github_username' => 'lucas-dantas10',
+    ],
 ];
