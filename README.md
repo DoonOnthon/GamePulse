@@ -1,5 +1,8 @@
 # GamePulse 🎮🚀
 
+**NOT AS ACTIVE CODING MYSELF, STILL CHECK THE PULL REQUESTS DAILY**
+**I'M VERY BUSY ATM**
+
 ![duck-pixel](https://github.com/DoonOnthon/GamePulse/assets/73943064/705ba326-116c-4d1b-87f6-88014dcb7eaf)
 
 # Welcome
