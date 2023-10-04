@@ -281,4 +281,25 @@ $games = [
         'sales_numbers' => '700,000+',
         'github_username' => 'lucas-dantas10',
     ],
+    [
+        'title' => 'Kingdom Hearts',
+        'category' => 'Action RPG',
+        'release_date' => '2002-03-28',
+        'sales_numbers' => '100,000,000+',
+        'github_username' => 'Emma-Jonna',
+    ],
+    [
+        'title' => 'Untitled Goose Game',
+        'category' => 'Puzzle, Stealth',
+        'release_date' => '2019-09-20',
+        'sales_numbers' => '5,000,000+',
+        'github_username' => 'Emma-Jonna',
+    ],
+    [
+        'title' => 'Ōkami',
+        'category' => 'Action-Adventure',
+        'release_date' => '2006-04-20',
+        'sales_numbers' => '4,000,000+',
+        'github_username' => 'Emma-Jonna',
+    ],
 ];
