@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- header -->
 <head>
     <title>Welcome to GamePulse</title>
     <!-- Include Bootstrap CSS -->
