@@ -308,5 +308,12 @@ $games = [
     'release_date' => '2023-07-15',
     'sales_numbers' => '5,000,000',
     'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Super Mario Odyssey',
+        'category' => 'Platformer',
+        'release_date' => '2017-10-27',
+        'sales_numbers' => '20,230,000',
+        'github_username' => 'adesh1998',
     ]
 ];
