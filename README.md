@@ -1,5 +1,5 @@
 # GamePulse 🎮🚀
-**HAPPY NEW YEAR!**
+**HAPPY NEW YEAR!**                                   </br>
 **NOT AS ACTIVE CODING MYSELF, STILL CHECK THE PULL REQUESTS DAILY**
 **I'M VERY BUSY ATM.**
 
