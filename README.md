@@ -153,10 +153,6 @@ Contribute to get on the list!
 </td>
 ```
 Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
-
-
-Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
-
   
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
