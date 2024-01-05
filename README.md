@@ -141,7 +141,8 @@ Contribute to get on the list!
     <!-- Add more <tr> elements for additional rows if needed -->
   </tbody>
 </table>
-Note: After contributing if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
+**Note:** After  contributing, if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
+
 ```html
 <td align="center" valign="top" width="14.28%">
   <a href="https://github.com/YourGithubName">
@@ -151,6 +152,8 @@ Note: After contributing if you wish to be featured on the GitHub README as a co
   <br />
 </td>
 ```
+Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
+
 
 Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
 
