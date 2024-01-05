@@ -141,7 +141,7 @@ Contribute to get on the list!
     <!-- Add more <tr> elements for additional rows if needed -->
   </tbody>
 </table>
-Note: If you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format (after contribution ofcourse):
+Note: After contributing if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
 ```html
 <td align="center" valign="top" width="14.28%">
   <a href="https://github.com/YourGithubName">
