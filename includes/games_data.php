@@ -87,7 +87,7 @@ $games = [
     ],
     [
         'title' => 'Grand Theft Auto V',
-        'category' => ' q',
+        'category' => 'action-adventure',
         'release_date' => '2013-09-17',
         'sales_numbers' => '140,000,000',
         'github_username' => 'tetawiah',

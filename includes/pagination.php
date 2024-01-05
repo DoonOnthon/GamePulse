@@ -13,5 +13,5 @@ $startIndex = max(($currentPage - 1) * $itemsPerPage, 0);
 $gamesPage = array_slice($games, $startIndex, $itemsPerPage);
 
 // Debugging statements
-var_dump($totalItems, $itemsPerPage, $currentPage, $startIndex);
+//var_dump($totalItems, $itemsPerPage, $currentPage, $startIndex);
 ?>
