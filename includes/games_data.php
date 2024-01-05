@@ -315,5 +315,13 @@ $games = [
         'release_date' => '2017-10-27',
         'sales_numbers' => '20,230,000',
         'github_username' => 'adesh1998',
+    ],
+    [
+    'title' => 'Lethal Company',
+    'category' => 'First-person Shooter',
+    'release_date' => '2023-06-15',
+    'sales_numbers' => '12,500,000',
+    'github_username' => 'DoonOnthon',
     ]
+
 ];
