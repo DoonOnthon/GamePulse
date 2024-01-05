@@ -102,9 +102,9 @@ Contribute to get on the list!
         <br />
       </td>
         <td align="center" valign="top" width="14.28%">
-        <a href="https://github.com/tetawiah">
-          <img src="https://github.com/tetawiah.png" width="100px;" alt="tetawiah"/><br />
-          <sub><b>tetawiah</b></sub>
+        <a href="https://github.com/AlandisAyupov">
+          <img src="https://github.com/AlandisAyupov.png" width="100px;" alt="AlandisAyupov"/><br />
+          <sub><b>AlandisAyupov</b></sub>
         </a>
         <br />
       </td>
