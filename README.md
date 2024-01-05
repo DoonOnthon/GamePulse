@@ -150,7 +150,8 @@ Contribute to get on the list!
   </a>
   <br />
 </td>
-</html>
+```
+
 Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
 
   
