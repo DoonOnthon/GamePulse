@@ -310,11 +310,54 @@ $games = [
         'github_username' => 'adesh1998',
     ],
     [
-    'title' => 'Lethal Company',
-    'category' => 'First-person Shooter',
-    'release_date' => '2023-06-15',
-    'sales_numbers' => '12,500,000',
-    'github_username' => 'DoonOnthon',
+        'title' => 'Lethal Company',
+        'category' => 'First-person Shooter',
+        'release_date' => '2023-06-15',
+        'sales_numbers' => '12,500,000',
+        'github_username' => 'DoonOnthon',
+    ],
+    [
+        'title' => 'Hogwarts Legacy',
+        'category' => 'Action RPG',
+        'release_date' => '2023-02-10',
+        'sales_numbers' => '15,000,000',
+        'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Star Wars Jedi: Fallen Order',
+        'category' => 'Action-Adventure',
+        'release_date' => '2019-11-15',
+        'sales_numbers' => '10,000,000',
+        'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Star Wars Jedi: Survivor',
+        'category' => 'Action-Adventure',
+        'release_date' => '2023-04-18',
+        'sales_numbers' => '10,400,000',
+        'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Baldurs Gate 3',
+        'category' => 'RPG',
+        'release_date' => '2023-08-03',
+        'sales_numbers' => '5,200,000',
+        'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Marvels Spider-Man',
+        'category' => 'Action-Adventure',
+        'release_date' => '2018-09-07',
+        'sales_numbers' => '20,000,000',
+        'github_username' => 'Camarota-234',
+    ],
+    [
+        'title' => 'Spider-Man: Miles Morales',
+        'category' => 'Action-Adventure',
+        'release_date' => '2020-11-11',
+        'sales_numbers' => '4,100,000',
+        'github_username' => 'Camarota-234',
     ]
+
 
 ];
