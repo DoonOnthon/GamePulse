@@ -28,6 +28,9 @@ include 'includes/pagination.php';       // Include pagination logic
 </head>
 
 <body>
+    <?php
+        include 'includes/header.inc.php';       // Include header
+    ?>
     <div class="container mt-5">
         <!-- Page Heading -->
         <h1>Welcome to GamePulse!</h1>
@@ -111,6 +114,7 @@ include 'includes/pagination.php';       // Include pagination logic
             });
         });
     </script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"></script>
 
     <!-- Modal for displaying game details -->
     <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
