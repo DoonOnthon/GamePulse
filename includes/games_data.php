@@ -357,7 +357,56 @@ $games = [
         'release_date' => '2020-11-11',
         'sales_numbers' => '4,100,000',
         'github_username' => 'Camarota-234',
-    ]
+    ],
+    [
+        'title' => 'PUBG: Battlegrounds',
+        'category' => 'Battle Royale',
+        'release_date' => '2017-12-20',
+        'sales_numbers' => '75,000,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'MarioKart 8 Deluxe',
+        'category' => 'Racing',
+        'release_date' => '2017-04-28',
+        'sales_numbers' => '65,570,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'Red Dead Redemption II',
+        'category' => 'Action-Adventure',
+        'release_date' => '2018-10-26',
+        'sales_numbers' => '57,000,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'Wii Sports',
+        'category' => 'Sport',
+        'release_date' => '2006-11-19',
+        'sales_numbers' => '82,900,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'Human: Fall Flat',
+        'category' => 'Platformer',
+        'release_date' => '2016-07-22',
+        'sales_numbers' => '50,000,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'Terraria',
+        'category' => 'Sandbox',
+        'release_date' => '2011-05-16',
+        'sales_numbers' => '44,500,000',
+        'github_username' => 'dalek63',
+    ],
+    [
+        'title' => 'Call of Duty: Modern Warfare 3',
+        'category' => 'First-person Shooter',
+        'release_date' => '2011-11-08',
+        'sales_numbers' => '26,500,000',
+        'github_username' => 'dalek63',
+    ],
 
 
 ];
