@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <!-- Navbar (if applicable) -->
-    <!-- Include Navbar from another file or code it here -->
+    <!-- Include the navbar -->
+    <?php include 'includes/navbar.inc.php'; ?>
 
     <!-- Main Content -->
     <div class="container mt-5">

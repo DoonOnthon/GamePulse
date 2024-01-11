@@ -28,6 +28,9 @@ include 'includes/pagination.php';       // Include pagination logic
 </head>
 
 <body>
+    <!-- Include the navbar -->
+    <?php include 'includes/navbar.inc.php'; ?>
+    
     <div class="container mt-5">
         <!-- Page Heading -->
         <h1>Welcome to GamePulse!</h1>
