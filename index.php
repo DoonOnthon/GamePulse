@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <!-- Include the navbar -->
+    <?php include 'includes/navbar.inc.php'; ?>
+
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
         <div class="container">
