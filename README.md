@@ -136,6 +136,20 @@ Contribute to get on the list!
         </a>
         <br />
       </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/dalek63">
+          <img src="https://github.com/dalek63.png" width="100px;" alt="dalek63"/><br />
+          <sub><b>dalek63</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlexWolak">
+          <img src="https://github.com/AlexWolak.png" width="100px;" alt="AlexWolak"/><br />
+          <sub><b>AlexWolak</b></sub>
+        </a>
+        <br />
+      </td>
       <!-- Add more <td> elements for other contributors if needed -->
     </tr>
     <!-- Add more <tr> elements for additional rows if needed -->
