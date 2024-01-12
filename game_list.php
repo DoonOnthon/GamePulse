@@ -196,6 +196,10 @@ include 'includes/pagination.php';       // Include pagination logic
                     }
                 });
             });
+
+            $(".btn-close, .btn-close2").on("click", function() {
+                $("#gameModal").modal("hide");
+            });
             
             $(".btn-details").on("click", function() {
                 // Get the row index of the clicked button
@@ -217,23 +221,22 @@ include 'includes/pagination.php';       // Include pagination logic
             });
         });
     </script>
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"></script>
 
     <!-- Modal for displaying game details -->
-    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="gameModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="gameModalLabel">Game Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <h5 class="modal-title fs-5" id="gameModalLabel">Game Details</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span class="visually-hidden">Close</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <!-- Game details will be dynamically updated here -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary btn-close2" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
