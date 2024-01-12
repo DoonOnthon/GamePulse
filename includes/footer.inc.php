@@ -16,9 +16,9 @@
             <div class="col-md-3">
                 <h3>Quick Links</h3>
                 <ul class="list-unstyled">
-                    <li><a href="../index.php" class="text-light">Home</a></li>
-                    <li><a href="../game_list.php" class="text-light">Game List</a></li>
-                    <li><a href="../aboutus.php" class="text-light">About Us</a></li>
+                    <li><a href="index.php" class="text-light">Home</a></li>
+                    <li><a href="game_list.php" class="text-light">Game List</a></li>
+                    <li><a href="aboutus.php" class="text-light">About Us</a></li>
                     <li><a href="#" class="text-light">Privacy Policy</a></li>
                 </ul>
             </div>

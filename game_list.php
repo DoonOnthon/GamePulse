@@ -60,6 +60,9 @@ include 'includes/pagination.php';       // Include pagination logic
 </head>
 
 <body style="background-image: url(images/herobanner.png)!important; background-size: cover; background-position: center; ">
+    <?php
+        include 'includes/header.inc.php';       // Include header
+    ?>
     <div class="container mt-5">
         
         <div class="post-content mb-4 head-title" style="padding: 8px; color: white;">
@@ -214,6 +217,7 @@ include 'includes/pagination.php';       // Include pagination logic
             });
         });
     </script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"></script>
 
     <!-- Modal for displaying game details -->
     <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
