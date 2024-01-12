@@ -95,6 +95,13 @@ Contribute to get on the list!
         <br />
       </td>
             <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlexWolak">
+          <img src="https://github.com/AlexWolak.png" width="100px;" alt="AlexWolak"/><br />
+          <sub><b>AlexWolak</b></sub>
+        </a>
+        <br />
+      </td>
+            <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/tetawiah">
           <img src="https://github.com/tetawiah.png" width="100px;" alt="tetawiah"/><br />
           <sub><b>tetawiah</b></sub>
