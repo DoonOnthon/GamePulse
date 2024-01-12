@@ -10,8 +10,9 @@ include 'includes/pagination.php';       // Include pagination logic
 <head>
     <title>GamePulse - Discover Exciting Games</title>
     <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+
     <!-- Include jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
@@ -128,6 +129,7 @@ include 'includes/pagination.php';       // Include pagination logic
                     <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
                     <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
                     <th>Contributor</th>
+                    <th>Trailer</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -140,8 +142,11 @@ include 'includes/pagination.php';       // Include pagination logic
                             <td><?php echo $game['sales_numbers']; ?></td>
                             <td><?php echo $game['github_username']; ?></td>
                             <td>
-                            <button class="btn btn-primary btn-details">Details</button>
-                        </td>
+                                <?php if (!empty($game['youtube_trailer'])) : ?>
+                                    <a class="btn btn-primary btn-trailer" href="<?php echo $game['youtube_trailer']; ?>" target="_blank">Watch Trailer</a>
+                                <?php endif; ?>
+                            </td>
+                            <td><button class="btn btn-primary btn-details">Details</button></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -218,6 +223,9 @@ include 'includes/pagination.php';       // Include pagination logic
 
                 // Show the modal manually
                 $("#gameModal").modal("show");
+            });
+
+            $(".btn-trailer").on("click", function() {
             });
         });
     </script>
