@@ -95,6 +95,13 @@ Contribute to get on the list!
         <br />
       </td>
             <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlexWolak">
+          <img src="https://github.com/AlexWolak.png" width="100px;" alt="AlexWolak"/><br />
+          <sub><b>AlexWolak</b></sub>
+        </a>
+        <br />
+      </td>
+            <td align="center" valign="top" width="14.28%">
         <a href="https://github.com/tetawiah">
           <img src="https://github.com/tetawiah.png" width="100px;" alt="tetawiah"/><br />
           <sub><b>tetawiah</b></sub>
@@ -133,6 +140,13 @@ Contribute to get on the list!
         <a href="https://github.com/LilMaddy">
           <img src="https://github.com/LilMaddy.png" width="100px;" alt="LilMaddy"/><br />
           <sub><b>LilMaddy</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/dalek63">
+          <img src="https://github.com/dalek63.png" width="100px;" alt="dalek63"/><br />
+          <sub><b>dalek63</b></sub>
         </a>
         <br />
       </td>
