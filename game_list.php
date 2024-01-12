@@ -221,7 +221,6 @@ include 'includes/pagination.php';       // Include pagination logic
             });
         });
     </script>
-
     <!-- Modal for displaying game details -->
     <div class="modal fade" id="gameModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
         <div class="modal-dialog">
