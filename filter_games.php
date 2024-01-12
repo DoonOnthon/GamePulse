@@ -6,6 +6,7 @@ include 'includes/pagination.php';
 //More than one filter in our case so its an array
 $titleFilter = isset($_GET['title']) ? $_GET['title'] : [];
 $categoryFilter = isset($_GET['category']) ? $_GET['category'] : [];
+$usernameFilter = isset($_GET['github_username']) ? $_GET['github_username'] : [];
 
 // Filter games based on title and category
 $filteredGames = $games; 
@@ -19,14 +20,20 @@ function categoryFilter($game) {
     global $categoryFilter;
     return in_array($game['category'], $categoryFilter);
 }
+function usernameFilter($game) {
+    global $usernameFilter;
+    return in_array($game['github_username'], $usernameFilter);
+}
 
 //Use functions
 if (!empty($titleFilter)) {
     $filteredGames = array_filter($filteredGames, 'titleFilter');
 }
-
 if (!empty($categoryFilter)) {
     $filteredGames = array_filter($filteredGames, 'categoryFilter');
+}
+if (!empty($usernameFilter)) {
+    $filteredGames = array_filter($filteredGames, 'usernameFilter');
 }
 
 

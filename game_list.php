@@ -34,6 +34,10 @@ include 'includes/pagination.php';       // Include pagination logic
             justify-content: flex-end;
             margin-bottom: 0;
         }
+        .filters {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .white-back {
             background: white!important; 
@@ -66,35 +70,51 @@ include 'includes/pagination.php';       // Include pagination logic
 
         <div class="content white-back" style="margin: 15px; margin-bottom: 3.5rem!important;">
             <div class="filters mb-3">
-                <label for="titleFilter">Filter by title:</label>
-                <select id="titleFilter" name="titleFilter[]" multiple>
-                    <?php
-                    // Collect unique game titles for filter
-                    $uniqueTitles = array_unique(array_column($games, 'title'));
-                    foreach ($uniqueTitles as $title) {
-                        echo "<option value='" . $title . "'>$title</option>";
-                    }
-                    ?>
-                </select>
+                <div>   
+                    <label for="titleFilter">Filter by title:</label>
+                    <select id="titleFilter" name="titleFilter[]" multiple>
+                        <?php
+                        // Collect unique game titles for filter
+                        $uniqueTitles = array_unique(array_column($games, 'title'));
+                        foreach ($uniqueTitles as $title) {
+                            echo "<option value='" . $title . "'>$title</option>";
+                        }
+                        ?>
+                    </select>
 
-                <label for="categoryFilter">Filter by category:</label>
-                <select id="categoryFilter" name="categoryFilter" multiple>
-                    <?php
-                    // Collect unique game categories for filter
-                    $uniqueCategories = array_unique(array_column($games, 'category'));
-                    foreach ($uniqueCategories as $category) {
-                        echo "<option value='" . $category . "'>$category</option>";
-                    }
-                    ?>
-                </select>
+                    <label for="categoryFilter">Filter by category:</label>
+                    <select id="categoryFilter" name="categoryFilter" multiple>
+                        <?php
+                        // Collect unique game categories for filter
+                        $uniqueCategories = array_unique(array_column($games, 'category'));
+                        foreach ($uniqueCategories as $category) {
+                            echo "<option value='" . $category . "'>$category</option>";
+                        }
+                        ?>
+                    </select>
+                    <label for="usernameFilter">Filter by contributor:</label>
+                    <select id="usernameFilter" name="usernameFilter" multiple>
+                        <?php
+                        // Collect unique game categories for filter
+                        $uniqueContributors = array_unique(array_column($games, 'github_username'));
+                        foreach ($uniqueContributors as $contributor) {
+                            echo "<option value='" . $contributor . "'>$contributor</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div>
+                    <!-- "Reset Search" button -->
+                    <a href="game_list.php" class="btn btn-secondary">Reset Search</a>
+                </div>
             </div>
             <!-- Search Bar -->
-            <!-- <form method="GET" action="">
+            <form method="GET" action="">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" name="search" placeholder="Search for games by title, category, or release date">
                     <button class="btn btn-primary" type="submit">Search</button>
                 </div>
-            </form> -->
+            </form>
 
             <!-- Game List Table -->
             <table class="table table-bordered table-striped" id="game-table">
@@ -134,13 +154,6 @@ include 'includes/pagination.php';       // Include pagination logic
                     <?php endfor; ?>
                 </ul>
             </nav>
-
-
-            <!-- "Reset Search" button -->
-            <!--  if (isset($_GET['search']) && !empty($_GET['search'])) : ?>"-->
-                <!-- Display the "Reset Search" button if a search query is present -->
-                <!-- <a href="game_list.php" class="btn btn-secondary mt-3">Reset Search</a> -->
-             <!-- endif; ?> -->
         </div>
     </div>
 
@@ -151,22 +164,29 @@ include 'includes/pagination.php';       // Include pagination logic
             // Select2 for choose some titles in this filter
             $('#titleFilter').select2({
                 placeholder: 'Choose Title(s)',
+                width: '150px'
             });
             // Select2 for choose some categorys in this filter
             $('#categoryFilter').select2({
                 placeholder: 'Choose Category(s)',
+                width: '200px'
+            });
+            $('#usernameFilter').select2({
+                placeholder: 'Choose Contributor(s)',
+                width: '200px'
             });
             
             // Filter for titles and categorys to search in the games data
-            $('#titleFilter, #categoryFilter').on('change', function() {
+            $('#titleFilter, #categoryFilter, #usernameFilter').on('change', function() {
                 // Collect filter values
                 var titleFilter = $('#titleFilter').val();
                 var categoryFilter = $('#categoryFilter').val();
+                var usernameFilter = $('#usernameFilter').val();
                 // Sending filter values to the server via AJAX
                 $.ajax({
                     type: 'GET',
                     url: 'filter_games.php',
-                    data: { title: titleFilter, category: categoryFilter },
+                    data: { title: titleFilter, category: categoryFilter, github_username: usernameFilter},
                     success: function(data) {
                         // Updating the table with filtered results received from the server
                         $('#game-table tbody').html(data);
