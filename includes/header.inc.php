@@ -1,5 +1,5 @@
 <style>
-    .border-bottom { border-bottom: 2px solid grey!important; margin-bottom: 4px;}
+    .border-bottom { border-bottom: 2px solid grey!important; margin-bottom: 0px;}
    .header {padding-right: 10px}
 </style>
 

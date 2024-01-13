@@ -10,6 +10,11 @@
 </head>
 
 <body>
+
+    <?php
+        include 'includes/header.inc.php';       // Include header
+    ?>
+
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
         <div class="container">

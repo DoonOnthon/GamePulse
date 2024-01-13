@@ -10,6 +10,11 @@
 </head>
 
 <body>
+
+    <?php
+        include 'includes/header.inc.php';       // Include header
+    ?>
+
     <!-- Navbar (if applicable) -->
     <!-- Include Navbar from another file or code it here -->
 
