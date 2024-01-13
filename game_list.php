@@ -63,15 +63,15 @@ include 'includes/pagination.php';       // Include pagination logic
     <?php
         include 'includes/header.inc.php';       // Include header
     ?>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         
         <div class="post-content mb-4 head-title" style="padding: 8px; color: white;">
             <!-- Page Heading -->
-            <h1>Welcome to GamePulse!</h1>
-            <p>Explore the world of gaming and find your next adventure.</p>
+            <h1 class="display-4">Welcome to GamePulse!</h1>
+            <p class="lead">Explore the world of gaming and find your next adventure.</p>
         </div>
 
-        <div class="content white-back" style="margin: 15px; margin-bottom: 3.5rem!important;">
+        <div class="content white-back mb-3" style="margin: 15px; margin-bottom: 3.5rem!important;">
             <div class="filters mb-3">
                 <div>   
                     <label for="titleFilter">Filter by title:</label>
@@ -120,36 +120,37 @@ include 'includes/pagination.php';       // Include pagination logic
             </form>
 
             <!-- Game List Table -->
-            <table class="table table-bordered table-striped" id="game-table">
-                <thead>
-                <tr>
-                    <th><a href="?sort=title">Game Title</a></th>
-                    <th>Category</th>
-                    <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-                    <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
-                    <th>Contributor</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($gamesPage as $game) : ?>
-                        <tr>
-                            <td><?php echo $game['title']; ?></td>
-                            <td><?php echo $game['category']; ?></td>
-                            <td><?php echo $game['release_date']; ?></td>
-                            <td><?php echo $game['sales_numbers']; ?></td>
-                            <td><?php echo $game['github_username']; ?></td>
-                            <td>
-                            <button class="btn btn-primary btn-details">Details</button>
-                        </td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
-
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="game-table">
+                    <thead>
+                    <tr>
+                        <th><a href="?sort=title">Game Title</a></th>
+                        <th>Category</th>
+                        <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
+                        <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
+                        <th>Contributor</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($gamesPage as $game) : ?>
+                            <tr>
+                                <td><?php echo $game['title']; ?></td>
+                                <td><?php echo $game['category']; ?></td>
+                                <td><?php echo $game['release_date']; ?></td>
+                                <td><?php echo $game['sales_numbers']; ?></td>
+                                <td><?php echo $game['github_username']; ?></td>
+                                <td>
+                                <button class="btn btn-primary btn-details">Details</button>
+                            </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>                
             <!-- Pagination -->
             <nav aria-label="Page navigation">
-                <ul class="pagination">
+                <ul class="pagination justify-content-end">
                     <?php for ($i = 1; $i <= $totalPages; $i++) : ?>
                         <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
                             <a class="page-link" href="?page=<?php echo $i; ?><?php echo isset($_GET['sort']) ? '&sort=' . $_GET['sort'] : ''; ?>"><?php echo $i; ?></a>
