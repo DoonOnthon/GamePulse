@@ -1,6 +1,9 @@
 <?php
-include 'includes/games_data.php';       
-include 'includes/pagination.php';                
+include 'includes/games_data.php';       // Include game data
+include 'includes/games.php';            // Include games array
+include 'includes/functions.inc.php';    // Include custom functions
+include 'includes/pagination.php';       // Include pagination logic
+include 'includes/languages.php';       // Include language logic            
 
 // Retrieving filter criteria sent by AJAX
 //More than one filter in our case so its an array
@@ -57,7 +60,14 @@ foreach ($gamesPage as $game) {
     echo '<td>' . $game['release_date'] . '</td>';
     echo '<td>' . $game['sales_numbers'] . '</td>';
     echo '<td>' . $game['github_username'] . '</td>';
-    echo '<td><button class="btn btn-primary btn-details">Details</button></td>';
+    echo '<td>';
+    if (!empty($game['youtube_trailer'])) {
+        echo '<a class="btn btn-primary btn-trailer" href="' . $game['youtube_trailer'] . '" target="_blank">' . $game_trailer_btn[$langue] . '</a>';
+    }
+    echo '</td>';
+    
+    echo '<td><button class="btn btn-primary btn-details">' . $game_details[$langue] . '</button></td>';
+
     echo '</tr>';
 }
 
