@@ -66,7 +66,8 @@ foreach ($gamesPage as $game) {
     }
     echo '</td>';
     
-    echo '<td><button class="btn btn-primary btn-details">' . $game_details[$langue] . '</button></td>';
+    $gameDetailsJson = htmlspecialchars(json_encode($game), ENT_QUOTES, 'UTF-8');
+    echo '<td><button class="btn btn-primary btn-details" data-game-details="' . $gameDetailsJson . '">' . $game_details[$langue] . '</button></td>';
 
     echo '</tr>';
 }
@@ -74,3 +75,27 @@ foreach ($gamesPage as $game) {
 
 ?>
 
+<script>
+        $(document).ready(function() {
+
+            $(".btn-close, .btn-close2").on("click", function() {
+                $("#gameModal").modal("hide");
+            });
+            
+            $(".btn-details").on("click", function() {
+                var gameDetails = $(this).data("game-details");
+                // Update the modal content with game details
+                $("#gameModal .modal-title").text(gameDetails.title);
+                $("#gameModal .modal-body").html(
+                    "<p><strong>Category:</strong> " + gameDetails.category + "</p>" +
+                    "<p><strong>Release Date:</strong> " + gameDetails.release_date + "</p>" +
+                    "<p><strong>Sales Numbers (Approx):</strong> " + gameDetails.sales_numbers + "</p>" +
+                    "<p><strong>Contributor:</strong> " + gameDetails.github_username + "</p>"
+                   
+                );
+
+                // Show the modal manually
+                $("#gameModal").modal("show");
+            });
+        });
+    </script>
