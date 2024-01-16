@@ -1,8 +1,6 @@
 <style>
     .border-top { border-top: 2px solid grey!important;}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xrR5KFN6dPnp6t6YSngP5w7tLF/JQqU2t7Hw/2+3XIfjgpdW+6jzjIg6tYYz8GBC4q9BRTt9h1pDmCdhzVV57w==" crossorigin="anonymous" />
-
 <div >
 <footer class="footer bg-dark text-light py-5 px-5 border-top" style="padding-bottom: 1rem!important;">
     <div class="row" style="justify-content: space-between;">
