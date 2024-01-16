@@ -1,6 +1,9 @@
 <?php
-include 'includes/games_data.php';       
-include 'includes/pagination.php';                
+include 'includes/games_data.php';       // Include game data
+include 'includes/games.php';            // Include games array
+include 'includes/functions.inc.php';    // Include custom functions
+include 'includes/pagination.php';       // Include pagination logic
+include 'includes/languages.php';       // Include language logic            
 
 // Retrieving filter criteria sent by AJAX
 //More than one filter in our case so its an array
@@ -57,10 +60,42 @@ foreach ($gamesPage as $game) {
     echo '<td>' . $game['release_date'] . '</td>';
     echo '<td>' . $game['sales_numbers'] . '</td>';
     echo '<td>' . $game['github_username'] . '</td>';
-    echo '<td><button class="btn btn-primary btn-details">Details</button></td>';
+    echo '<td>';
+    if (!empty($game['youtube_trailer'])) {
+        echo '<a class="btn btn-primary btn-trailer" href="' . $game['youtube_trailer'] . '" target="_blank">' . $game_trailer_btn[$langue] . '</a>';
+    }
+    echo '</td>';
+    
+    $gameDetailsJson = htmlspecialchars(json_encode($game), ENT_QUOTES, 'UTF-8');
+    echo '<td><button class="btn btn-primary btn-details" data-game-details="' . $gameDetailsJson . '">' . $game_details[$langue] . '</button></td>';
+
     echo '</tr>';
 }
 
 
 ?>
 
+<script>
+        $(document).ready(function() {
+
+            $(".btn-close, .btn-close2").on("click", function() {
+                $("#gameModal").modal("hide");
+            });
+            
+            $(".btn-details").on("click", function() {
+                var gameDetails = $(this).data("game-details");
+                // Update the modal content with game details
+                $("#gameModal .modal-title").text(gameDetails.title);
+                $("#gameModal .modal-body").html(
+                    "<p><strong>Category:</strong> " + gameDetails.category + "</p>" +
+                    "<p><strong>Release Date:</strong> " + gameDetails.release_date + "</p>" +
+                    "<p><strong>Sales Numbers (Approx):</strong> " + gameDetails.sales_numbers + "</p>" +
+                    "<p><strong>Contributor:</strong> " + gameDetails.github_username + "</p>"
+                   
+                );
+
+                // Show the modal manually
+                $("#gameModal").modal("show");
+            });
+        });
+    </script>

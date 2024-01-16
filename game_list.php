@@ -148,7 +148,7 @@
                                     <a class="btn btn-primary btn-trailer" href="<?php echo $game['youtube_trailer']; ?>" target="_blank"><?php echo $game_trailer_btn[$langue]; ?></a>
                                 <?php endif; ?>
                             </td>
-                            <td><button class="btn btn-primary btn-details"><?php echo $game_details[$langue]; ?></button></td>
+                            <td><button class="btn btn-primary btn-details" data-game-details="<?php echo htmlspecialchars(json_encode($game), ENT_QUOTES, 'UTF-8'); ?>"><?php echo $game_details[$langue]; ?></button></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -209,18 +209,17 @@
             });
             
             $(".btn-details").on("click", function() {
-                // Get the row index of the clicked button
-                var rowIndex = $(this).closest("tr").index();
-                // Get the game details from the games array based on the row index
-                var game = <?php echo json_encode($games); ?>[rowIndex];
+
+                var gameDetails = $(this).data("game-details");
 
                 // Update the modal content with game details
-                $("#gameModal .modal-title").text(game.title);
+                $("#gameModal .modal-title").text(gameDetails.title);
                 $("#gameModal .modal-body").html(
-                    "<p><strong>Category:</strong> " + game.category + "</p>" +
-                    "<p><strong>Release Date:</strong> " + game.release_date + "</p>" +
-                    "<p><strong>Sales Numbers (Approx):</strong> " + game.sales_numbers + "</p>" +
-                    "<p><strong>Contributor:</strong> " + game.github_username + "</p>"
+                    "<p><strong>Category:</strong> " + gameDetails.category + "</p>" +
+                    "<p><strong>Release Date:</strong> " + gameDetails.release_date + "</p>" +
+                    "<p><strong>Sales Numbers (Approx):</strong> " + gameDetails.sales_numbers + "</p>" +
+                    "<p><strong>Contributor:</strong> " + gameDetails.github_username + "</p>"
+                   
                 );
 
                 // Show the modal manually
