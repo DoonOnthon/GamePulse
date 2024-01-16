@@ -1,9 +1,10 @@
 <?php
 // Include necessary files for game data and functions
-include 'includes/games_data.php';       // Include game data
-include 'includes/games.php';            // Include games array
-include 'includes/functions.inc.php';    // Include custom functions
-include 'includes/pagination.php';       // Include pagination logic
+    include 'includes/games_data.php';       // Include game data
+    include 'includes/games.php';            // Include games array
+    include 'includes/functions.inc.php';    // Include custom functions
+    include 'includes/pagination.php';       // Include pagination logic
+    include 'includes/languages.php';       // Include language logic
 ?>
 <!DOCTYPE html>
 <html>
@@ -57,6 +58,9 @@ include 'includes/pagination.php';       // Include pagination logic
         .h1, h1 {
             font-size: 3.5rem;
         }  
+        .drapeau {
+            width: 40px;
+        }
     </style>
 </head>
 
@@ -65,17 +69,15 @@ include 'includes/pagination.php';       // Include pagination logic
         include 'includes/header.inc.php';       // Include header
     ?>
     <div class="container mt-5">
-        
         <div class="post-content mb-4 head-title" style="padding: 8px; color: white;">
-            <!-- Page Heading -->
-            <h1>Welcome to GamePulse!</h1>
-            <p>Explore the world of gaming and find your next adventure.</p>
+            <h1><?php echo $titre1[$langue]; ?></h1>
+            <p><?php echo $titre2[$langue]; ?></p>
         </div>
 
         <div class="content white-back" style="margin: 15px; margin-bottom: 3.5rem!important;">
             <div class="filters mb-3">
                 <div>   
-                    <label for="titleFilter">Filter by title:</label>
+                    <label for="titleFilter"><?php echo $filter1[$langue]; ?></label>
                     <select id="titleFilter" name="titleFilter[]" multiple>
                         <?php
                         // Collect unique game titles for filter
@@ -86,7 +88,7 @@ include 'includes/pagination.php';       // Include pagination logic
                         ?>
                     </select>
 
-                    <label for="categoryFilter">Filter by category:</label>
+                    <label for="categoryFilter"><?php echo $filter2[$langue]; ?></label>
                     <select id="categoryFilter" name="categoryFilter" multiple>
                         <?php
                         // Collect unique game categories for filter
@@ -96,7 +98,7 @@ include 'includes/pagination.php';       // Include pagination logic
                         }
                         ?>
                     </select>
-                    <label for="usernameFilter">Filter by contributor:</label>
+                    <label for="usernameFilter"><?php echo $filter3[$langue]; ?></label>
                     <select id="usernameFilter" name="usernameFilter" multiple>
                         <?php
                         // Collect unique game categories for filter
@@ -109,14 +111,14 @@ include 'includes/pagination.php';       // Include pagination logic
                 </div>
                 <div>
                     <!-- "Reset Search" button -->
-                    <a href="game_list.php" class="btn btn-secondary">Reset Search</a>
+                    <a href="game_list.php" class="btn btn-secondary"><?php echo $reset_search[$langue]; ?></a>
                 </div>
             </div>
             <!-- Search Bar -->
             <form method="GET" action="">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" name="search" placeholder="Search for games by title, category, or release date">
-                    <button class="btn btn-primary" type="submit">Search</button>
+                    <input type="text" class="form-control" name="search" placeholder="<?php echo $search_bar[$langue]; ?>">
+                    <button class="btn btn-primary" type="submit"><?php echo $search_btn[$langue]; ?></button>
                 </div>
             </form>
 
@@ -124,13 +126,13 @@ include 'includes/pagination.php';       // Include pagination logic
             <table class="table table-bordered table-striped" id="game-table">
                 <thead>
                 <tr>
-                    <th><a href="?sort=title">Game Title</a></th>
-                    <th>Category</th>
-                    <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>">Release Date</a></th>
-                    <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"> Sales Numbers (Approx) </a></th>
-                    <th>Contributor</th>
-                    <th>Trailer</th>
-                    <th>Actions</th>
+                    <th><a href="?sort=title"><?php echo $game_title[$langue]; ?></a></th>
+                    <th><?php echo $game_category[$langue]; ?></th>
+                    <th><a href="?sort=<?php echo ($sort === 'newest') ? 'oldest' : 'newest'; ?>"><?php echo $game_date[$langue]; ?></a></th>
+                    <th><a href = "?sort=<?=($sort === 'highest') ? 'lowest' : 'highest'; ?>"><?php echo $game_sales_number[$langue]; ?></a></th>
+                    <th><?php echo $game_contributor[$langue]; ?></th>
+                    <th><?php echo $game_trailer[$langue]; ?></th>
+                    <th><?php echo $game_actions[$langue]; ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -143,10 +145,10 @@ include 'includes/pagination.php';       // Include pagination logic
                             <td><?php echo $game['github_username']; ?></td>
                             <td>
                                 <?php if (!empty($game['youtube_trailer'])) : ?>
-                                    <a class="btn btn-primary btn-trailer" href="<?php echo $game['youtube_trailer']; ?>" target="_blank">Watch Trailer</a>
+                                    <a class="btn btn-primary btn-trailer" href="<?php echo $game['youtube_trailer']; ?>" target="_blank"><?php echo $game_trailer_btn[$langue]; ?></a>
                                 <?php endif; ?>
                             </td>
-                            <td><button class="btn btn-primary btn-details">Details</button></td>
+                            <td><button class="btn btn-primary btn-details"><?php echo $game_details[$langue]; ?></button></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -171,16 +173,16 @@ include 'includes/pagination.php';       // Include pagination logic
 
             // Select2 for choose some titles in this filter
             $('#titleFilter').select2({
-                placeholder: 'Choose Title(s)',
+                placeholder: '<?php echo $select_title[$langue]; ?>',
                 width: '150px'
             });
             // Select2 for choose some categorys in this filter
             $('#categoryFilter').select2({
-                placeholder: 'Choose Category(s)',
+                placeholder: '<?php echo $select_category[$langue]; ?>',
                 width: '200px'
             });
             $('#usernameFilter').select2({
-                placeholder: 'Choose Contributor(s)',
+                placeholder: '<?php echo $select_contributor[$langue]; ?>',
                 width: '200px'
             });
             

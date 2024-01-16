@@ -1,21 +1,33 @@
 <!DOCTYPE html>
+<?php
+include 'includes/languages.php';
+?>
 <html>
 <!-- header -->
 <head>
-    <title>Welcome to GamePulse</title>
+    <title>GamePulse - Discover Exciting Games</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Include your custom stylesheet -->
     <link href="stylesheet.css" rel="stylesheet">
+    <style>
+        .drapeau {
+            width: 40px;
+        }
+
+    </style>
 </head>
 
 <body>
+    <?php
+        include 'includes/header.inc.php';       // Include header
+    ?>
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
         <div class="container">
-            <h1 class="display-4">Welcome to GamePulse!</h1>
-            <p class="lead">Explore the world of gaming and find your next adventure.</p>
-            <a href="game_list.php" class="btn btn-primary btn-lg">View Game List</a>
+            <h1 class="display-4"><?php echo $titre1[$langue]; ?></h1>
+            <p class="lead"><?php echo $titre2_home[$langue]; ?></p>
+            <a href="game_list.php" class="btn btn-primary btn-lg"><?php echo $btn_game_list[$langue]; ?></a>
         </div>
     </section>
 
@@ -23,17 +35,17 @@
     <section class="container mt-5">
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
-                <h2>About GamePulse</h2>
-                <p class="lead">GamePulse is your gateway to discovering an exhilarating realm of video games. With a handpicked selection spanning diverse genres, GamePulse empowers gamers to explore, experience, and engage with captivating titles.</p>
-                <p>Whether you're on the lookout for high-octane action, mind-bending puzzles, or immersive narratives, our platform curates an exceptional collection that resonates with gaming enthusiasts of all levels.</p>
-                <p>Join us on this journey as we celebrate the art, innovation, and endless enjoyment that the world of gaming offers. Fuel your passion, ignite your curiosity, and uncover your next unforgettable gaming experience with GamePulse.</p>
+                <h2><?php echo $about_home[$langue]; ?></h2>
+                <p class="lead"><?php echo $desc1[$langue]; ?></p>
+                <p><?php echo $desc2[$langue]; ?></p>
+                <p><?php echo $desc3[$langue]; ?></p>
             </div>
         </div>
     </section>
 <!-- Popular Games Right Now -->
 <section class="popular-games">
     <div class="container">
-        <h2 class="section-title">Popular Games Right Now</h2>
+        <h2 class="section-title"><?php echo $popular_games[$langue]; ?></h2>
         <div class="horizontal-tilted-game-art">
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2Freddeadredemption2%2F&options=&locale=en_us">
@@ -56,7 +68,7 @@
 <!-- Popular Games Right Now -->
 <section class="Upcoming-games">
     <div class="container">
-        <h2 class="section-title">Great Upcoming Games!</h2>
+        <h2 class="section-title"><?php echo $upcoming_games[$langue]; ?></h2>
         <div class="horizontal-tilted-game-art">
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.ea.com/games/skate?isLocalized=true">

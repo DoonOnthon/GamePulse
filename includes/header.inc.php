@@ -1,19 +1,44 @@
+<?php
+include 'includes/languages.php';
+?>
+
 <style>
     .border-bottom { border-bottom: 2px solid grey!important; margin-bottom: 4px;}
    .header {padding-right: 10px}
 </style>
 
 
-    <header class="header d-flex bg-dark text-light flex-wrap justify-content-center py-3 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4 text-light">Game Pulse</span>
-        </a>
+<?php
+function isPageActive($pageName) {
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    return ($currentPage === $pageName);
+}
+?>
 
+<header class="header bg-dark text-light py-3 border-bottom">
+    <div class="d-flex justify-content-between px-4">
+        <a href="index.php" class="fs-4 text-light text-decoration-none">Game Pulse</a>
         <ul class="nav nav-pills">
-        <li class="nav-item"><a href="index.php" class="nav-link" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="game_list.php" class="nav-link active">Game List</a></li>
-        <li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+            <li class="nav-item">
+                <a href="index.php" class="nav-link <?php echo (isPageActive('index.php')) ? 'active' : ''; ?>" aria-current="page">
+                    <?php echo $home[$langue]; ?>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="game_list.php" class="nav-link <?php echo (isPageActive('game_list.php')) ? 'active' : ''; ?>">
+                    <?php echo $game_list[$langue]; ?>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href ="<?php echo $_SERVER['PHP_SELF']; ?>?lang=1" class="nav-link" target="_self">
+                    <img src="images/drapeau-francais.jpg" class="drapeau"/>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href ="<?php echo $_SERVER['PHP_SELF']; ?>" target="_self" class="nav-link">
+                    <img src="images/drapeau-anglais.jpg" class="drapeau"/>
+                </a>
+            </li>  
         </ul>
-    </header>
+    </div>
+</header>
