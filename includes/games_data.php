@@ -395,6 +395,30 @@ $games = [
         'github_username' => 'dalek63',
         'youtube_trailer' => 'https://youtu.be/coiTJbr9m04?si=kTgKUCAXX66GbURv'
     ],
+    [
+        'title' => 'Palworld',
+        'category' => 'RPG',
+        'release_date' => '2024-01-19',
+        'sales_numbers' => '8,000,000+',
+        'github_username' => 'HassanMirza123',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=ZPu9yAOEYkQ'
+    ],
+    [
+        'title' => 'Tekken 8',
+        'category' => 'Fighting',
+        'release_date' => '2024-01-26',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => 'HassanMirza123',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=_MM4clV2qjE'
+    ],
+    [
+        'title' => 'EA Sports UFC 5',
+        'category' => 'Fighting',
+        'release_date' => '2023-10-24',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => 'HassanMirza123',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=1R4MdobS1nI'
+    ],
     
 
 ];
