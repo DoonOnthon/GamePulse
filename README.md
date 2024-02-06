@@ -1,6 +1,6 @@
 # GamePulse 🎮🚀
-**HAPPY NEW YEAR!**                                   </br>
-**NOT AS ACTIVE CODING MYSELF, STILL CHECK THE PULL REQUESTS DAILY.**</br>
+</br>
+**NOT AS ACTIVE CODING MYSELF, I WILL TRY TO CHECK UP ON PULL REQUESTS AS MUCH AS TIME ALLOWS ME**</br>
 **I'M VERY BUSY ATM.**
 
 ![duck-pixel](https://github.com/DoonOnthon/GamePulse/assets/73943064/705ba326-116c-4d1b-87f6-88014dcb7eaf)
