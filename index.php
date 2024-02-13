@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include 'includes/languages.php';
+include 'includes/datas/languages.php';
 ?>
 <html>
 <!-- header -->
