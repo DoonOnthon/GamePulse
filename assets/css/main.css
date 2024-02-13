@@ -1,3 +1,8 @@
+/* Header */
+/* for the flag of the languages*/
+.drapeau {
+    width: 40px;
+}
 .hero-banner {
   background-image: url("/assets/images/Herobanner.png");
   background-size: cover;
