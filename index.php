@@ -52,17 +52,17 @@ include 'includes/datas/languages.php';
         <div class="horizontal-tilted-game-art">
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2Freddeadredemption2%2F&options=&locale=en_us">
-                    <img src="images/RDR2cover.jpg" alt="RDR2 Game Art">
+                    <img src="assets/images/RDR2cover.jpg" alt="RDR2 Game Art">
                 </a>
             </div>
             <div class="tilted-game-art">
                 <a target="_blank" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">
-                    <img src="images/CSGOcover.jpg" alt="CSGO Game Art">
+                    <img src="assets/images/CSGOcover.jpg" alt="CSGO Game Art">
                 </a>
             </div>
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.minecraft.net/en-us">
-                    <img src="images/MinecraftCover.png" alt="Minecraft Game Art">
+                    <img src="assets/images/MinecraftCover.png" alt="Minecraft Game Art">
                 </a>
             </div>
         </div>
@@ -75,12 +75,12 @@ include 'includes/datas/languages.php';
         <div class="horizontal-tilted-game-art">
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.ea.com/games/skate?isLocalized=true">
-                    <img src="images/Skate4Cover.jpg" alt="Skate 4 art">
+                    <img src="assets/images/Skate4Cover.jpg" alt="Skate 4 art">
                 </a>
             </div>
             <div class="tilted-game-art">
                 <a target="_blank" href="https://www.paydaythegame.com/payday3/">
-                    <img src="images/Payday3Cover.jpg" alt="Payday 3 art">
+                    <img src="assets/images/Payday3Cover.jpg" alt="Payday 3 art">
                 </a>
             </div>
         </div>
