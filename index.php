@@ -14,11 +14,6 @@ include 'includes/datas/languages.php';
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Include your custom stylesheet -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .drapeau {
-            width: 40px;
-        }
-    </style>
 </head>
 
 <body>
