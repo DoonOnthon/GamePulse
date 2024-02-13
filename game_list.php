@@ -13,6 +13,9 @@
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/game_list.css">
+    <!-- jQuery and AJAX -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -22,49 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <!-- Custom CSS to remove link underline -->
-    <style>
-        /* Style for the link in the table header */
-        th a {
-            text-decoration: none;
-            /* Remove underline */
-            color: inherit;
-            /* Inherit color from parent element */
-        }
-        .select2-search__field  {
-            height: 25px!important;
-        }
-        .pagination {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 0;
-        }
-        .filters {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .white-back {
-            background: white!important; 
-            background-size: cover; 
-            background-position: center;
-            margin: 5px;
-            padding: 25px;
-            min-height: 400px;
-            border-radius: 10px;
-        }
-        .head-title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .h1, h1 {
-            font-size: 3.5rem;
-        }  
-        .drapeau {
-            width: 40px;
-        }
-    </style>
 </head>
 
 <body style="background-image: url(./assets/images/Herobanner.png)!important; background-size: cover; background-position: center; ">
