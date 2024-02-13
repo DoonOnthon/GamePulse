@@ -1,10 +1,10 @@
 <?php
 // Include necessary files for game data and functions
-    include 'includes/games_data.php';       // Include game data
-    include 'includes/games.php';            // Include games array
-    include 'includes/functions.inc.php';    // Include custom functions
-    include 'includes/pagination.php';       // Include pagination logic
-    include 'includes/languages.php';       // Include language logic
+    include 'includes/datas/games_data.php';       // Include game data
+    include 'includes/processes/games.php';            // Include games array
+    include 'includes/processes/functions.inc.php';    // Include custom functions
+    include 'includes/processes/pagination.php';       // Include pagination logic
+    include 'includes/processes/languages.php';       // Include language logic
 ?>
 <!DOCTYPE html>
 <html>

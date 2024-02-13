@@ -13,18 +13,17 @@ include 'includes/languages.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Include your custom stylesheet -->
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
     <style>
         .drapeau {
             width: 40px;
         }
-
     </style>
 </head>
 
 <body>
     <?php
-        include 'includes/header.inc.php';       // Include header
+        include 'includes/header/header.inc.php';       // Include header
     ?>
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
@@ -92,7 +91,7 @@ include 'includes/languages.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <!-- Include the footer -->
-    <?php include 'includes/footer.inc.php'; ?>
+    <?php include 'includes/footer/footer.inc.php'; ?>
 </body>
 
 </html>

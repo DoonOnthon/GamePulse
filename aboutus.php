@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include 'includes/languages.php';
+include 'includes/datas/languages.php';
 ?>
 <html>
 <!-- header -->
@@ -22,7 +22,7 @@ include 'includes/languages.php';
     <!-- Navbar (if applicable) -->
     <!-- Include Navbar from another file or code it here -->
     <?php
-        include 'includes/header.inc.php';       // Include header
+        include 'includes/header/header.inc.php';       // Include header
     ?>
     <!-- Main Content -->
     <div class="container mt-5">
@@ -42,7 +42,7 @@ include 'includes/languages.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <!-- Include the footer -->
-    <?php include 'includes/footer.inc.php'; ?>
+    <?php include 'includes/footer/footer.inc.php'; ?>
 </body>
 
 </html>
