@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
 
-<a href="index.php" class="navbar-brand px-2">Game Pulse</a>
+<a href="index.php" class="navbar-brand ms-3 p-2">Game Pulse</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
