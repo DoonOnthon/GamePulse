@@ -18,12 +18,12 @@
 </li>
 <li class="nav-item">
     <a href ="<?php echo $_SERVER['PHP_SELF']; ?>?lang=1" class="d-flex justify-content-end py-2 nav-link" target="_self">
-        <img src="images/drapeau-francais.jpg" class="drapeau"/>
+        <img src="assets/images/drapeau-francais.jpg" class="drapeau"/>
     </a>
 </li>
 <li class="nav-item">
     <a href ="<?php echo $_SERVER['PHP_SELF']; ?>" target="_self" class="d-flex justify-content-end py-2 nav-link">
-        <img src="images/drapeau-anglais.jpg" class="drapeau"/>
+        <img src="assets/images/drapeau-anglais.jpg" class="drapeau"/>
     </a>
     </ul>
 </div>

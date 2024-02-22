@@ -1,5 +1,5 @@
 <?php
-include 'includes/languages.php';
+include './includes/datas/languages.php';
 ?>
 
 <style>
@@ -16,6 +16,6 @@ function isPageActive($pageName) {
 ?>
 
 <header class="header bg-dark text-light py-3">
-    <?php include 'includes/navbar.php'; ?>
+    <?php include 'navbar.php'; ?>
 </header>
 

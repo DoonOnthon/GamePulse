@@ -1,9 +1,9 @@
 <?php
-include 'includes/games_data.php';       // Include game data
-include 'includes/games.php';            // Include games array
-include 'includes/functions.inc.php';    // Include custom functions
-include 'includes/pagination.php';       // Include pagination logic
-include 'includes/languages.php';       // Include language logic            
+include 'includes/datas/games_data.php';       // Include game data
+include 'includes/datas/languages.php';       // Include language logic   
+include 'includes/processes/games.php';            // Include games array
+include 'includes/processes/functions.inc.php';    // Include custom functions
+include 'includes/processes/pagination.php';       // Include pagination logic
 
 // Retrieving filter criteria sent by AJAX
 //More than one filter in our case so its an array

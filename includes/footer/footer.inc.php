@@ -1,5 +1,5 @@
 <?php
-include 'includes/languages.php';
+include './includes/datas/languages.php';
 ?>
 <style>
     .border-top { border-top: 2px solid grey!important;}

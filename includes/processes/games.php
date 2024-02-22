@@ -1,6 +1,6 @@
 <?php
 // Include the 'games_data.php' file to get the game data
-include 'games_data.php';
+include './includes/datas/games_data.php';
 // Check if the search form was submitted and the search query is not empty
 if (isset($_GET['search']) && !empty($_GET['search'])) {
     $searchQuery = $_GET['search'];

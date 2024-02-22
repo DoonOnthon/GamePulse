@@ -1,10 +1,10 @@
 <?php
 // Include necessary files for game data and functions
-    include 'includes/games_data.php';       // Include game data
-    include 'includes/games.php';            // Include games array
-    include 'includes/functions.inc.php';    // Include custom functions
-    include 'includes/pagination.php';       // Include pagination logic
-    include 'includes/languages.php';       // Include language logic
+    include './includes/datas/games_data.php';       // Include game data
+    include './includes/processes/games.php';            // Include games array
+    include './includes/processes/functions.inc.php';    // Include custom functions
+    include './includes/processes/pagination.php';       // Include pagination logic
+    include './includes/datas/languages.php';       // Include language logic
 ?>
 <!DOCTYPE html>
 <html>
@@ -67,9 +67,9 @@
     </style>
 </head>
 
-<body style="background-image: url(images/Herobanner.png)!important; background-size: cover; background-position: center; ">
+<body style="background-image: url(./assets/images/Herobanner.png)!important; background-size: cover; background-position: center; ">
     <?php
-        include 'includes/header.inc.php';       // Include header
+        include './includes/header/header.inc.php';       // Include header
     ?>
     <div class="container mt-5">
         <div class="post-content mb-4 head-title" style="padding: 8px; color: white;">
@@ -253,7 +253,7 @@
         </div>
     </div>
     <?php
-    include 'includes/footer.inc.php';       // Include footer
+    include './includes/footer/footer.inc.php';       // Include footer
     ?>
 </body>
 
