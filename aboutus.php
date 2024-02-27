@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <?php
+session_start();
 include 'includes/datas/languages.php';
 ?>
 <html>
 <!-- header -->
 <head>
-    <title><?php echo $about_home[$langue]; ?></title>
+    <title>GamePulse - Discover Exciting Games</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js (for dropdowns) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Include your custom stylesheet -->
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
