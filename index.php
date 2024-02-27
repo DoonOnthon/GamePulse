@@ -23,7 +23,7 @@ include 'includes/datas/languages.php';
     ?>
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
-        <div class="container">
+        <div class="container" id="main-container">
             <h1 class="display-4"><?php echo $titre1[$langue]; ?></h1>
             <p class="lead"><?php echo $titre2_home[$langue]; ?></p>
             <a href="game_list.php" class="btn btn-primary btn-lg"><?php echo $btn_game_list[$langue]; ?></a>
