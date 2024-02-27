@@ -15,6 +15,12 @@
   text-align: center;
   color: white;
 }
+
+#main-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 200px;
+}
+
 /* Tilted Game Art */
 .tilted-game-art {
   position: relative;
