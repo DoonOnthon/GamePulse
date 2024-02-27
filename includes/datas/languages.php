@@ -7,7 +7,7 @@ if(isset($_GET["lang"]))
 $titre1 = array("en" => "Welcome to GamePulse!", "fr" => "Bienvenue sur GamePulse!");
 $titre2 = array("en" => "Explore the world of gaming and find your next adventure.", 'fr'=>"Explorez le monde du jeu et trouvez votre prochaine aventure.");
 $filter1 = array("en" => "Filter by title:",'fr'=>"Filtrer par titre:");
-$filter2 = array("en" => "Filter by catecogry:",'fr'=>"Filtrer par catégorie:");
+$filter2 = array("en" => "Filter by category:",'fr'=>"Filtrer par catégorie:");
 $filter3 = array("en" => "Filter by contributor:",'fr'=>"Filtrer par contributeur:");
 $reset_search = array("en" => "Reset Search",'fr'=>"Réinitialiser la recherche");
 $search_bar = array("en" => "Search for games by title, category, or release date",'fr'=>"Rechercher des jeux par titre, catégorie ou date de sortie");
