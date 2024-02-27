@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_start();
 include 'includes/datas/languages.php';
 ?>
 <html>
