@@ -419,6 +419,30 @@ $games = [
         'github_username' => 'HassanMirza123',
         'youtube_trailer' => 'https://www.youtube.com/watch?v=1R4MdobS1nI'
     ],
+    [
+        'title' => 'Red Dead Redemption 2',
+        'category' => 'Action-Adventure',
+        'release_date' => '2018-10-26',
+        'sales_numbers' => '50,000,000+',
+        'github_username' => 'andre-franciosi',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=gmA6MrX81z4'
+    ],
+    [
+        'title' => 'Darksiders',
+        'category' => 'Action-Adventure',
+        'release_date' => '2010-01-18',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => 'andre-franciosi',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=ArHzEGeiMbg'
+    ],
+    [
+        'title' => 'Darksiders II',
+        'category' => 'Action-RPG',
+        'release_date' => '2012-08-14',
+        'sales_numbers' => '4,000,000+',
+        'github_username' => 'andre-franciosi',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=TCjlo5pdV2A'
+    ]
     
 
 ];
