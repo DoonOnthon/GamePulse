@@ -419,6 +419,29 @@ $games = [
         'github_username' => 'HassanMirza123',
         'youtube_trailer' => 'https://www.youtube.com/watch?v=1R4MdobS1nI'
     ],
-    
+    [
+        'title' => 'Dishonored 2',
+        'category' => 'Action-Adventure, Stealth',
+        'release_date' => '2016-11-11',
+        'sales_numbers' => '2,000,000+',
+        'github_username' => 'Ayse-Sadioglu',
+        'youtube_trailer' => 'https://youtu.be/7bLNC8VDTlQ?si=prJZc3RzsduJ2YOG'
+    ],
+    [
+        'title' => 'Stardew Valley',
+        'category' => 'Farm life sim, role-playing',
+        'release_date' => '2016-02-26',
+        'sales_numbers' => '30,000,000+',
+        'github_username' => 'Ayse-Sadioglu',
+        'youtube_trailer' => 'https://youtu.be/ot7uXNQskhs?si=ChlS8ECUIvicRiUi'
+    ],
+    [
+        'title' => 'Hades',
+        'category' => 'Roguelike',
+        'release_date' => '2020-09-17',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => 'Ayse-Sadioglu',
+        'youtube_trailer' => 'https://youtu.be/Bz8l935Bv0Y?si=Vuc9aVRZ0nKiRp9k'
+    ],
 
 ];
