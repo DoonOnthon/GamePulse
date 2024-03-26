@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_start();
 include 'includes/datas/languages.php';
 ?>
 <html>
@@ -14,11 +15,6 @@ include 'includes/datas/languages.php';
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Include your custom stylesheet -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .drapeau {
-            width: 40px;
-        }
-    </style>
 </head>
 
 <body>
@@ -27,7 +23,7 @@ include 'includes/datas/languages.php';
     ?>
     <!-- Hero Banner -->
     <section class="hero-banner text-center py-5">
-        <div class="container">
+        <div class="container" id="main-container">
             <h1 class="display-4"><?php echo $titre1[$langue]; ?></h1>
             <p class="lead"><?php echo $titre2_home[$langue]; ?></p>
             <a href="game_list.php" class="btn btn-primary btn-lg"><?php echo $btn_game_list[$langue]; ?></a>

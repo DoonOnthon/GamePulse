@@ -150,6 +150,13 @@ Contribute to get on the list!
         </a>
         <br />
       </td>
+            <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/andre-franciosi">
+          <img src="https://github.com/andre-franciosi.png" width="100px;" alt="andre-franciosi"/><br />
+          <sub><b>andre-franciosi</b></sub>
+        </a>
+        <br />
+      </td>
       <!-- Add more <td> elements for other contributors if needed -->
     </tr>
     <!-- Add more <tr> elements for additional rows if needed -->

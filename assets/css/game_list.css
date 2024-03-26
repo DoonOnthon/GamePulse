@@ -1,0 +1,48 @@
+
+/* Style for the link in the table header */
+th a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent element */
+}
+
+.select2-search__field {
+    height: 25px !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-back {
+    background: white !important;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    padding: 25px;
+    min-height: 400px;
+    border-radius: 10px;
+}
+
+.head-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1,
+h1 {
+    font-size: 3.5rem;
+}
+
+.drapeau {
+    width: 40px;
+}
