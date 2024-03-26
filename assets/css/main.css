@@ -1,3 +1,8 @@
+/* Header */
+/* for the flag of the languages*/
+.drapeau {
+    width: 40px;
+}
 .hero-banner {
   background-image: url("/assets/images/Herobanner.png");
   background-size: cover;
@@ -10,6 +15,12 @@
   text-align: center;
   color: white;
 }
+
+#main-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 200px;
+}
+
 /* Tilted Game Art */
 .tilted-game-art {
   position: relative;
