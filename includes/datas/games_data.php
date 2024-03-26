@@ -420,6 +420,13 @@ $games = [
         'youtube_trailer' => 'https://www.youtube.com/watch?v=1R4MdobS1nI'
     ],
     [
+       'title' => 'Pro Evolution Soccer 2010',
+		  'category' => 'Sport',
+		  'release_date' => '2010-06-01',
+		  'sales_numbers' => '1,000,000+',
+		  'github_username' => 'thoughts-cell',
+		  'youtube_trailer' => 'https://www.youtube.com/watch?v=G49fe4KW-IE'
+	    ],
         'title' => 'Red Dead Redemption 2',
         'category' => 'Action-Adventure',
         'release_date' => '2018-10-26',
