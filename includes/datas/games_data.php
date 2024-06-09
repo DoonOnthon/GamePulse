@@ -426,7 +426,8 @@ $games = [
 		  'sales_numbers' => '1,000,000+',
 		  'github_username' => 'thoughts-cell',
 		  'youtube_trailer' => 'https://www.youtube.com/watch?v=G49fe4KW-IE'
-	    ],
+	],
+    [
         'title' => 'Red Dead Redemption 2',
         'category' => 'Action-Adventure',
         'release_date' => '2018-10-26',
@@ -474,4 +475,236 @@ $games = [
         'github_username' => 'Ayse-Sadioglu',
         'youtube_trailer' => 'https://youtu.be/Bz8l935Bv0Y?si=Vuc9aVRZ0nKiRp9k'
     ],
+    [
+        'title' => '7 Days to Die',
+        'category' => 'Action,Adventure,EarlyAccess,Indie,RPG,Simulation,Strategy',
+        'release_date' => '2013-12-13',
+        'sales_numbers' => '4,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=kikTJaVBank'
+    ],
+    [
+        'title' => 'Raft',
+        'category' => 'Adventure,Indie,Simulation',
+        'release_date' => '2022-06-20',
+        'sales_numbers' => '5,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=__w615A5lC4'
+    ],
+    [
+        'title' => 'Sons Of The Forest',
+        'category' => 'Action,Adventure,Indie,Simulation',
+        'release_date' => '2024-02-22',
+        'sales_numbers' => '3,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=8sghWJKPWno'
+    ],
+    [
+        'title' => 'Factorio',
+        'category' => 'Casual,Indie,Simulation,Strategy',
+        'release_date' => '2020-08-14',
+        'sales_numbers' => '2,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=J8SBp4SyvLc'
+    ],
+    [
+        'title' => 'Total War: WARHAMMER II',
+        'category' => 'Action,Strategy',
+        'release_date' => '2017-09-28',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=fXxe897bW-A'
+    ],
+    [
+        'title' => 'DEATH STRANDING',
+        'category' => 'Action,Adventure',
+        'release_date' => '2020-07-14',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=tCI396HyhbQ'
+    ],
+    [
+        'title' => 'Fallout 4',
+        'category' => 'RPG',
+        'release_date' => '2015-11-9',
+        'sales_numbers' => '4,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=XW7Of3g2JME'
+    ],
+    [
+        'title' => 'Hollow Knight',
+        'category' => 'Action,Adventure,Indie',
+        'release_date' => '2017-02-24',
+        'sales_numbers' => '6,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=UAO2urG23S4'
+    ],
+    [
+        'title' => 'Stellaris',
+        'category' => 'Simulation,Strategy',
+        'release_date' => '2016-05-9',
+        'sales_numbers' => '2,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=zW3YB2ptGws'
+    ],
+    [
+        'title' => 'Half-Life: Alyx',
+        'category' => 'Action,Adventure',
+        'release_date' => '2020-03-23',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=O2W0N3uKXmo'
+    ],
+    [
+        'title' => "Don't Starve Together",
+        'category' => 'Action,Adventure,Indie,RPG,Simulation,Strategy',
+        'release_date' => '2016-04-21',
+        'sales_numbers' => '5,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=bVbyn7c1X6E'
+    ],
+    [
+        'title' => 'God of War',
+        'category' => 'Action,Adventure,RPG',
+        'release_date' => '2022-01-14',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=K0u_kAWLJOA'
+    ],
+    [
+        'title' => 'EA SPORTS FC™ 24',
+        'category' => 'Simulation,Sports',
+        'release_date' => '2023-09-28',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=XhP3Xh4LMA8'
+    ],
+    [
+        'title' => 'Risk of Rain 2',
+        'category' => 'Action,Indie',
+        'release_date' => '2020-08-11',
+        'sales_numbers' => '3,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=pJ-aR--gScM'
+    ],
+    [
+        'title' => 'Arma 3',
+        'category' => 'Action,Simulation,Strategy',
+        'release_date' => '2013-09-12',
+        'sales_numbers' => '2,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=M1YBZUxMX8g'
+    ],
+    [
+        'title' => 'Project Zomboid',
+        'category' => 'EarlyAccess,Indie,RPG,Simulation',
+        'release_date' => '2013-11-8',
+        'sales_numbers' => '4,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=nPbsDmzZ3Oc'
+    ],
+    [
+        'title' => "Dragon's Dogma 2",
+        'category' => 'Action,RPG',
+        'release_date' => '2024-03-21',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=Td4Kek2gtYM'
+    ],
+    [
+        'title' => 'PAYDAY 2',
+        'category' => 'Action,RPG',
+        'release_date' => '2013-08-13',
+        'sales_numbers' => '8,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=Hmp1da7pXTw'
+    ],
+    [
+        'title' => 'Total War: WARHAMMER III',
+        'category' => 'Action,Strategy',
+        'release_date' => '2022-02-16',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=UFRuE8SsDec'
+    ],
+    [
+        'title' => 'Resident Evil 2',
+        'category' => 'Action',
+        'release_date' => '2019-01-24',
+        'sales_numbers' => '2,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=u3wS-Q2KBpk'
+    ],
+    [
+        'title' => 'Satisfactory',
+        'category' => 'Adventure,EarlyAccess,Indie,Simulation,Strategy',
+        'release_date' => '2020-06-8',
+        'sales_numbers' => '2,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=QvWaV4qshZQ'
+    ],
+    [
+        'title' => 'XCOM® 2',
+        'category' => 'Strategy',
+        'release_date' => '2016-02-4',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=ZlF4_o3qALo'
+    ],
+    [
+        'title' => 'Marvel’s Spider-Man Remastered',
+        'category' => 'Action,Adventure,Casual',
+        'release_date' => '2022-08-12',
+        'sales_numbers' => '1,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=mrT5q5xXb7Y'
+    ],
+    [
+        'title' => 'Hell Let Loose',
+        'category' => 'Action,Indie,MassivelyMultiplayer,Simulation,Strategy',
+        'release_date' => '2021-07-27',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=ESvKkbTeAi4'
+    ],
+    [
+        'title' => 'Detroit: Become Human',
+        'category' => 'Action,Adventure',
+        'release_date' => '2020-06-18',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=8a-EObAhYrg'
+    ],
+    [
+        'title' => 'Kerbal Space Program',
+        'category' => 'Indie,Simulation',
+        'release_date' => '2015-04-27',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=P_nj6wW6Gsc'
+    ],
+    [
+        'title' => 'The Binding of Isaac: Rebirth',
+        'category' => 'Action',
+        'release_date' => '2014-11-4',
+        'sales_numbers' => '5,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=Z6_C2ppkdVc'
+    ],
+    [
+        'title' => 'Bloons TD 6',
+        'category' => 'Strategy',
+        'release_date' => '2018-12-17',
+        'sales_numbers' => '5,000,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=cRDbFoDsQ6M'
+    ],
+    [
+        'title' => 'NieR:Automata™',
+        'category' => 'Action,RPG',
+        'release_date' => '2017-03-17',
+        'sales_numbers' => '1,500,000+',
+        'github_username' => '32192442sangho',
+        'youtube_trailer' => 'https://www.youtube.com/watch?v=wJxNhJ8fjFk'
+    ],    
 ];
