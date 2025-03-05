@@ -1,7 +1,13 @@
 <?php
-if(session_status()==PHP_SESSION_NONE)session_start();
-if(isset($_GET["lang"]))
+if(session_status() == PHP_SESSION_NONE) session_start();
+
+// Check if the 'lang' parameter exists in the URL before setting it
+if(isset($_GET["lang"])) {
     $_SESSION['lang'] = $_GET['lang'];
+} elseif(!isset($_SESSION['lang'])) {
+    // Set a default language if it's not set in the session
+    $_SESSION['lang'] = 'en'; // Default to English if no language is selected
+}
     $langue = $_SESSION['lang'];
 //game_list.php
 $titre1 = array("en" => "Welcome to GamePulse!", "fr" => "Bienvenue sur GamePulse!");

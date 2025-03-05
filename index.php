@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 session_start();
+include_once("config/database.php");
 include 'includes/datas/languages.php';
 ?>
 <html>
