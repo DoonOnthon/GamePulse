@@ -110,7 +110,116 @@ To contribute, please follow these steps:
 6. Push your changes to your branch in your forked repository.
 7. Create a pull request to the main branch of the GamePulse repository.
 
-For more details, please refer to our contribution guidelines.
+For more details, please refer to our [contribution guidelines](CONTRIBUTING.md).
+
+## Our Contributors
+Contribute to get on the list!
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/DoonOnthon">
+          <img src="https://github.com/DoonOnthon.png" width="100px;" alt="DoonOnthon"/><br />
+          <sub><b>DoonOnthon</b></sub>
+        </a>
+        <br />
+        <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/harrydemorgan">
+          <img src="https://github.com/harrydemorgan.png" width="100px;" alt="harrydemorgan"/><br />
+          <sub><b>harrydemorgan</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/doromi22">
+          <img src="https://github.com/doromi22.png" width="100px;" alt="doromi22"/><br />
+          <sub><b>doromi22</b></sub>
+        </a>
+        <br />
+      </td>
+            <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlexWolak">
+          <img src="https://github.com/AlexWolak.png" width="100px;" alt="AlexWolak"/><br />
+          <sub><b>AlexWolak</b></sub>
+        </a>
+        <br />
+      </td>
+            <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/tetawiah">
+          <img src="https://github.com/tetawiah.png" width="100px;" alt="tetawiah"/><br />
+          <sub><b>tetawiah</b></sub>
+        </a>
+        <br />
+      </td>
+        <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/AlandisAyupov">
+          <img src="https://github.com/AlandisAyupov.png" width="100px;" alt="AlandisAyupov"/><br />
+          <sub><b>AlandisAyupov</b></sub>
+        </a>
+        <br />
+      </td>
+       <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/IamSudhir-Kumar">
+          <img src="https://github.com/IamSudhir-Kumar.png" width="100px;" alt="AlandisAyupov"/><br />
+          <sub><b>IamSudhir-Kumar</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Omanshu209">
+          <img src="https://github.com/Omanshu209.png" width="100px;" alt="Omanshu209"/><br />
+          <sub><b>Omanshu209</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Legen32">
+          <img src="https://github.com/Legen32.png" width="100px;" alt="Legen32"/><br />
+          <sub><b>Legen32</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/LilMaddy">
+          <img src="https://github.com/LilMaddy.png" width="100px;" alt="LilMaddy"/><br />
+          <sub><b>LilMaddy</b></sub>
+        </a>
+        <br />
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/dalek63">
+          <img src="https://github.com/dalek63.png" width="100px;" alt="dalek63"/><br />
+          <sub><b>dalek63</b></sub>
+        </a>
+        <br />
+      </td>
+            <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/andre-franciosi">
+          <img src="https://github.com/andre-franciosi.png" width="100px;" alt="andre-franciosi"/><br />
+          <sub><b>andre-franciosi</b></sub>
+        </a>
+        <br />
+      </td>
+      <!-- Add more <td> elements for other contributors if needed -->
+    </tr>
+    <!-- Add more <tr> elements for additional rows if needed -->
+  </tbody>
+</table>
+**Note:** After  contributing, if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
+
+html
+<td align="center" valign="top" width="14.28%">
+  <a href="https://github.com/YourGithubName">
+    <img src="https://github.com/YourGithubName.png" width="100px;" alt="YourGithubName"/><br />
+    <sub><b>YourGithubName</b></sub>
+  </a>
+  <br />
+</td>
+
+Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
+  
+We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
 ## Our Contributors
 Contribute to get on the list!
@@ -129,3 +238,4 @@ Join us on this exciting journey as we build a comprehensive gaming platform tha
 ✅ **Explained how to configure MySQL credentials**  
 ✅ **Detailed database migration steps**  
 ✅ **Included command-line instructions for setting up the project**
+
