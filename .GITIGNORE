@@ -1,0 +1,37 @@
+# Ignore environment configuration files (keep credentials secret)
+.env
+.env.local
+
+# Ignore database dumps and local SQLite databases
+*.sql
+*.sqlite
+*.sqlite3
+
+# Ignore Composer dependencies (if vendor is not committed)
+vendor/
+composer.lock
+
+# Ignore logs and debug files
+*.log
+logs/
+debug.log
+
+# Ignore OS and editor-specific files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+*.swn
+*.tmp
+*.~*
+
+# Ignore IDE & Editor Settings
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore cache and session files
+cache/
+sessions/
+tmp/
