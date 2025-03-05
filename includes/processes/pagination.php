@@ -1,6 +1,6 @@
 <?php
 // Pagination logic
-$itemsPerPage = 5;
+$itemsPerPage = 20;
 $totalItems = count($games);
 $totalPages = ceil($totalItems / $itemsPerPage);
 

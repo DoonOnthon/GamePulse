@@ -75,11 +75,6 @@ include 'includes/datas/languages.php';
                     <img src="assets/images/Skate4Cover.jpg" alt="Skate 4 art">
                 </a>
             </div>
-            <div class="tilted-game-art">
-                <a target="_blank" href="https://www.paydaythegame.com/payday3/">
-                    <img src="assets/images/Payday3Cover.jpg" alt="Payday 3 art">
-                </a>
-            </div>
         </div>
     </div>
 </section>
