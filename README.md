@@ -209,7 +209,7 @@ Contribute to get on the list!
   </tbody>
 </table>
 **Note:** After  contributing, if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
-```
+html
 <td align="center" valign="top" width="14.28%">
   <a href="https://github.com/YourGithubName">
     <img src="https://github.com/YourGithubName.png" width="100px;" alt="YourGithubName"/><br />
@@ -217,7 +217,7 @@ Contribute to get on the list!
   </a>
   <br />
 </td>
-```
+
 Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
   
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
