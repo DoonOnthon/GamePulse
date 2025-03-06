@@ -59,8 +59,9 @@ Our long-term goals for GamePulse include:
 GamePulse uses an `.env` file to store sensitive information like database credentials. To set it up:
 
 1. Copy the example environment file:
-   ```sh
+   ```
    cp .env.example .env
+   ```
 2. Open .env in a text editor and update the necessary values, such as database credentials:
 
  ```
@@ -79,9 +80,9 @@ GamePulse uses an `.env` file to store sensitive information like database crede
 Make sure you have MySQL installed and running. Then:
 
 1. Create the database:
-
+```
    CREATE DATABASE gamepulse;
-
+```
 2. Ensure your .env file has the correct database credentials.
 
 #### Running Migrations
@@ -92,9 +93,9 @@ To set up the database structure, we use SQL migration files in the /migrations/
    php scripts/migrate.php
 
 2. If needed, you can apply a specific migration manually:
-
+```
    mysql -u root -p gamepulse < migrations/001_create_users_table.sql
-
+```
 3. If you make schema changes, create a new SQL migration file in /migrations/ and follow the existing naming convention (001_create_users_table.sql, 002_add_games_table.sql, etc.).
 
 ## Contributing
@@ -208,8 +209,7 @@ Contribute to get on the list!
   </tbody>
 </table>
 **Note:** After  contributing, if you wish to be featured on the GitHub README as a contributor, please add yourself to the list in the following format:
-
-html
+```
 <td align="center" valign="top" width="14.28%">
   <a href="https://github.com/YourGithubName">
     <img src="https://github.com/YourGithubName.png" width="100px;" alt="YourGithubName"/><br />
@@ -217,7 +217,7 @@ html
   </a>
   <br />
 </td>
-
+```
 Replace YourGithubName in both the URL (https://github.com/YourGithubName) and image (https://github.com/YourGithubName.png) with your GitHub username. This ensures your inclusion as a contributor on our GitHub README. Thank you for your contributions to GamePulse! 🎮🚀
   
 We appreciate the contributions of all developers who have helped make GamePulse a reality. If you're interested in contributing to this project, feel free to explore our [Contribution Guidelines](CONTRIBUTING.md) to get started.
