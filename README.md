@@ -63,11 +63,12 @@ GamePulse uses an `.env` file to store sensitive information like database crede
    cp .env.example .env
 2. Open .env in a text editor and update the necessary values, such as database credentials:
 
+ ```
    DB_HOST=127.0.0.1
    DB_NAME=gamepulse
    DB_USER=root
    DB_PASS=yourpassword
-
+```
    The config/env.php file will automatically load these environment variables into your project.
 
    Note: Do not commit your .env file to Git! It is ignored in .gitignore to keep sensitive data private.
